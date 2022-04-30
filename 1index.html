@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="shortcut icon" href="imagenes/tiranosaurio.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+        <link rel="stylesheet" href="css/animate.css">
         <title>SucuRex</title>
     </head>
     <!-- Inicia body -->
@@ -14,15 +16,15 @@
         <!-- Inicia header -->
         <div class="zona-1">
             <header class="encabezado">
-                <div>
+                <div class="wow animate__bounce" data-wow-duration="2s">
                     <img src="imagenes/dinosaurio.png" alt="logo" width="10%" height="auto">
-                    <h1>Vivero SucuRex</h1>
+                    <h1 class=>Vivero SucuRex</h1>
                     <img src="imagenes/planta.png" alt="plantalo" width="10%" height="auto">
                 </div>
                 <hr>
                 <nav class="background-nav">
                     <ul>
-                        <li><a href="1index2.html">Inicio</a></li>
+                        <li><a href="1index.html">Inicio</a></li>
                         <li><a href="2servicios.html">Servicios</a></li>
                         <li><a href="3productos.html">Productos </a></li>
                         <li> <a href="4nosotros.html">Nosotros</a></li>
@@ -166,6 +168,10 @@
             </div>
             <!--fin PIECITO-->
         </footer>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
     
     </html>
