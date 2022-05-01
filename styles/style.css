@@ -52,6 +52,10 @@ body {
 .encabezado div img {
     padding: 5% 0% 5% 0%;
 }
+.animate__animated .animate__backInLeft{
+    --animate-duration: 2s;
+}
+
 
 /* fin header */
 /* inicia nav */
