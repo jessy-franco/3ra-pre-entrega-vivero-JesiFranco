@@ -114,9 +114,11 @@ header {
 }
 .whatsaap-logo {
     position: fixed;
-    margin-top: 20%;
-    padding-left: 90%;
+    margin-bottom: 20%; 
+    padding-left: 90%; 
     z-index: 2;
+    width: 10%;
+    height: auto;
 }
 
 .presentacion div h2 {
@@ -306,47 +308,60 @@ header {
     width: 100%;
     height: auto;
 }
+.mini-grid{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "form-ubicacion mapa";
+    overflow-x: hidden;
+
+}
 
 /* inicia formulario */
-footer .form-ubicacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-footer .form-ubicacion form {
+footer .mini-grid .form-ubicacion{
+    grid-area: form-ubicacion; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: auto;
     background-color: #ddffbc;
-    padding: 5%;
-    width: 50%;
-    height: 31vh;
 }
-
-footer .form-ubicacion form h3 {
+footer .form-ubicacion h3 {
     text-align: center;
     color: green;
     font-style: italic;
-}
-
-footer .form-ubicacion form ul li {
-    list-style: none;
-    color: green;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 3.2;
 }
 
 /*----FIn formulario*/
 /*-------Inicia mapa y redes----*/
 footer .mapa {
+    grid-area: mapa; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: auto;
     color: #172415;
     background-color: #adc2a9c1;
     padding: 5% 10%;
-    width: 40%;
-    height: 31vh;
     text-align: center;
     line-height: 2.5rem;
+}
+.mapa h3{
+    text-align: center;
+    color: green;
+    font-style: italic;
+    margin-right: 10%;
+    padding-bottom: 6%;
+}
+footer .mapa iframe{
+    width: 80%;
+    height: 60%;
+    margin-right: 15%;
 }
 
 footer .redes {
@@ -562,6 +577,9 @@ footer .pie {
 .talle{
     width: 70%;
     height: auto;
+}
+.tip-color p{
+    color: #DDFFBC;
 }
 
 /* fin .zona-2-desarrollo galeria productos */
@@ -932,42 +950,24 @@ footer .pie {
         grid-row-start: 19;
         grid-row-end: 25;
     }
-    footer .form-ubicacion {
-        display: flex;
+    .mini-grid{
+        display:flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        height: auto;
-    }
-    footer .form-ubicacion form {
-        width: 100%;
-        height: auto;
-    }
-    .form-ubicacion form ul li{
-        font-size: 1rem;
-    }
-    .form-ubicacion form ul li p{
-        font-size: 0.8rem;
-    }
-    .form-ubicacion form ul li:nth-child(3){
-        display: none;
-    }
-    .form-ubicacion form ul li textarea{
-        font-size: 0.7rem;
-    }
-    .form-ubicacion form ul li input{
-        font-size: 0.7rem;
-    }
+    }       
+
+    footer .mini-grid .form-ubicacion h3{
+        line-height: 1.6rem;
+    } 
+    
     footer .mapa {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        line-height: 2.5rem;
+        line-height: 1.6rem;
     }
     footer .mapa iframe{
         width: 80%;
         height: 60%;
+        margin: 0;
     }
     footer .redes h3 {
         line-height: 0.5rem;
@@ -1221,45 +1221,25 @@ footer .pie {
         grid-row-start: 16;
         grid-row-end: 23;
     }
-    footer .form-ubicacion {
-        display: flex;
-        flex-direction: row;
+
+    .mini-grid{
+        display:flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-    }
-    footer .form-ubicacion form {
-        width: 100%;
-        height: 40vh;
-    }
-    .form-ubicacion form h3{
-        font-size: 1.2rem;
-    }
-    .form-ubicacion form ul li{
-        font-size: 1rem;
-    }
-    .form-ubicacion form ul li p{
-        font-size: 0.8rem;
-    }
-    .form-ubicacion form ul li:nth-child(3){
-        display: none;
-    }
-    .form-ubicacion form ul li textarea{
-        font-size: 0.7rem;
-    }
-    .form-ubicacion form ul li input{
-        font-size: 0.7rem;
-    }
+        align-items: center;
+    }       
+
+    footer .mini-grid .form-ubicacion h3{
+        line-height: 2.6rem;
+    } 
+    
     footer .mapa {
-        width: 100%;
-        height: 40vh;
-        text-align: center;
-        line-height: 2.5rem;
+        line-height: 2.6rem;
     }
     footer .mapa iframe{
         width: 80%;
         height: 60%;
+        margin: 0;
     }
 
     footer .redes h3 {
