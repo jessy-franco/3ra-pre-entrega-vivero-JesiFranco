@@ -1,0 +1,67 @@
+/* estilos font */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+}
+$interlin:(
+    l-height: 4.2rem,
+    l-height2: 2.8rem,
+    l-height3: 3rem,
+    l-height4: 4rem,
+    l-height5: 1.6rem,
+);
+$f-weight:(
+    f-w1: bold,
+    f-w2: 600,
+    f-w3: 550,
+);
+$f-size:(
+    talle: 1.8rem,
+    talle2: 1.5rem,
+    talle3: 1.2rem,
+    talle4: 2.5rem,
+    talle5: 2rem,
+
+);
+$dplay:( 
+    dplay1: inline-block,
+    txt-alg: center,
+    txt-alg2:left,
+    f-styl: oblique,
+    txt-deco: underline,
+);
+$l-style:(
+    list-stl: circle,
+);
+/* colores de fuente */
+$color:(
+    color1: #52734D,
+    color2: #466142,
+    color3:rgb(255, 255, 255),
+    color4:rgb(80, 78, 78),
+    color5: whitesmoke,
+    color6:#172415,
+    color7:green,
+);
+/* tamaños de divs */
+
+$tall-cont:(
+    ancho1: 100%,
+    ancho2:90%,
+    ancho3:80%,
+    ancho4:70%,
+    ancho5:45%,
+    ancho6:50%,
+    alto1: auto,
+    alto2: 10vh,
+    alto3: 20vh,
+    alto4: 60%,
+    alto5:100%
+);
+/* background-image */
+$backg-img:(
+    posit: center,
+    size: cover,
+    repeat: no-repeat,
+);

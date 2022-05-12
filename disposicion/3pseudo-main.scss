@@ -1,0 +1,110 @@
+@import '../componentes/colores.scss';
+@import '../componentes/map.scss';
+@import '../componentes/estilos.scss';
+
+.zona-2 {
+    .presentacion {
+        div {
+            h2 {
+                color: map-get($color, color5);
+                font-weight: map-get($f-weight, f-w1);
+                text-align: map-get($dplay, txt-alg2);
+                margin-top: 5%;
+                padding-left: 5%;
+                font-size: map-get($f-size, talle4);
+                line-height: map-get($interlin, l-height5);
+            }
+        }
+    }
+}
+
+.zona-2-desarrollo {
+    background-color: $zona2-des;
+
+    h3 {
+        color: map-get($color, color2);
+        line-height: map-get($interlin, l-height);
+        font-size: map-get($f-size, talle);
+        font-weight: map-get($f-weight, f-w1);
+        padding: 1%;
+    }
+
+    p {
+        color: map-get($color, color1);
+        line-height: map-get($interlin, l-height2);
+        font-size: map-get($f-size, talle2);
+        font-style: italic;
+        font-weight: map-get($f-weight, f-w3);
+        padding: 0.5% 3%;
+    }
+}
+
+.zona-3 {
+    background-color: $zona3;
+
+    .autumn {
+        display: map-get($flex3, disp);
+        flex-direction: map-get($flex3, f-dir);
+        justify-content: map-get($flex3, dispo-h);
+        align-items: map-get($flex3, dispo-v);
+        background-color: $zona3-autumn;
+
+        .temporada {
+            div {
+                p {
+                    color: map-get($color, color3);
+                    font-weight: map-get($f-weight, f-w2);
+                    font-weight: map-get($f-weight, f-w1);
+                    font-style: italic;
+                    font-size: map-get($f-size, talle2);
+                    line-height: map-get($interlin, l-height3);
+                    margin: 4.5% 2%;
+                }
+            }
+        }
+    }
+}
+
+.zona-4 {
+    background-color: $zona4;
+
+    div {
+        display: map-get($flex4, disp);
+        flex-direction: map-get($flex4, f-dir);
+        justify-content: map-get($flex4, dispo-h);
+        align-items: map-get($flex4, dispo-v);
+        padding: 0 2% 4% 2%;
+        margin: 4% 8% 6% 6%;
+
+        h3 {
+            line-height: map-get($interlin, l-height3);
+            font-size: map-get($f-size, talle3);
+            color: map-get($color, color4);
+            text-align: center;
+        }
+    }
+}
+
+.zona-5 {
+    background-color: $crema;
+
+    .pasos {
+        display: map-get($flex5, disp);
+        justify-content: map-get($flex5, dispo-h);
+        align-items: map-get($flex5, dispo-v);
+        flex-direction: map-get($flex5, f-dir);
+
+        div {
+            p {
+                font-style: italic;
+                font-weight:map-get($f-weight, f-w1 );
+                font-size: map-get($f-size, talle4);
+                line-height: map-get($interlin, l-height4 );
+                color: map-get($color,color1);
+                display: map-get($dplay, dplay1);
+                text-align: map-get($dplay, txt-alg);
+                margin: 5%;
+            }
+        }
+    }
+}

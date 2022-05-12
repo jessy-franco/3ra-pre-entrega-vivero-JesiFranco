@@ -1,0 +1,29 @@
+@import '../componentes/colores.scss';
+@import '../componentes/map.scss';
+
+/* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
+.zona-1 {
+    .encabezado div {
+        /* background: $zona1-header;
+        background: $zona1-hd2; */
+        background-color: $zona1-nav;
+        display: map-get($flex1, disp);
+        justify-content: map-get($flex1, dispo-h);
+        align-items: map-get($flex1, dispo-v);
+    }
+    nav{
+        div{
+            .logotipo {
+                visibility: hidden;
+            }
+            .background-nav{
+                display: map-get($flex2, disp);
+                justify-content: map-get($flex2,dispo-h);
+                align-items: map-get($flex2,dispo-v);
+                background-color: $zona1-nav;
+                
+            }
+        }
+    }
+    
+}

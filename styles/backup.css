@@ -312,31 +312,32 @@ header {
     display: grid;
     grid-template-columns: repeat(2 1fr);
     grid-auto-rows: auto;
-    grid-template-areas: "form-ubicacion mapa";
+    grid-template-areas: "redes mapa";
     overflow-x: hidden;
 
 }
 
-/* inicia formulario */
-footer .mini-grid .form-ubicacion{
-    grid-area: form-ubicacion; 
+/*-------Inicia mapa y redes----*/
+footer .redes {
+    grid-area: redes; 
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
     width: 100%;
     height: auto;
-    background-color: #ddffbc;
 }
-footer .form-ubicacion h3 {
-    text-align: center;
-    color: green;
-    font-style: italic;
-    line-height: 3.2;
+footer .redes a {
+    padding-left: 10%;
 }
 
-/*----FIn formulario*/
-/*-------Inicia mapa y redes----*/
+footer .redes h3 {
+    color: #52734D;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 2rem;
+}
 footer .mapa {
     grid-area: mapa; 
     grid-column-start: 2;
@@ -364,26 +365,7 @@ footer .mapa iframe{
     margin-right: 15%;
 }
 
-footer .redes {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: #FEFFDE;
-    padding: 5%;
-    width: 90%;
-    height: auto;
-}
-footer .redes a {
-    padding-left: 10%;
-}
 
-footer .redes h3 {
-    color: #52734D;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.6rem;
-    font-size: 2rem;
-}
 
 /*-----Fin mapa y redes---*/
 /*---Inicio piecito---*/

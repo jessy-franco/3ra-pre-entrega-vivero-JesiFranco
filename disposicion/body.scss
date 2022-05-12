@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+    overflow-x: hidden;
+    .zona-1 {
+        grid-area: zona-1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100%;
+        height: auto;
+    }
+    .zona-2 {
+        grid-area: zona-2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 6;
+        width: 100%;
+        height: auto;
+    }
+    .zona-2-desarrollo {
+        grid-area: zona-2-desarrollo;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        background: rgb(167, 189, 145);
+        background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+        width: 100%;
+        height: auto;
+        padding: 4% 1%;
+    }
+    .zona-3 {
+        grid-area: zona-3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 12;
+        width: 100%;
+        height: auto;
+        background-color: #DDFFBC;
+    }
+    .zona-4 {
+        grid-area: zona-4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 12;
+        width: 100%;
+        height: auto;
+        background: rgb(173, 175, 173);
+        background: linear-gradient(0deg, rgba(173, 175, 173, 1) 2%, rgba(173, 194, 169, 1) 96%);
+    }
+    .zona-5 {
+        grid-area: zona-5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 16;
+        background-color: #FEFFDE;
+        width: 100%;
+        height: auto;
+    }
+    .zona-6 {
+        grid-area: zona-6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 16;
+        grid-row-end: 21;
+        width: 100%;
+        height: auto;
+    }
+}

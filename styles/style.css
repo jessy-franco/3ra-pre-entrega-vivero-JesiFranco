@@ -1,0 +1,212 @@
+/* color zona5 y 6-redes */
+/* Extend aplica a:.encabezado div/ */
+/* aplica a: .background-nav/ */
+/* aplica a .autumn */
+/* aplica a: .zona-4 div/ */
+/* aplica a: .pasos/ */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #52734D;
+}
+
+/* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
+.zona-1 .encabezado div {
+  /* background: $zona1-header;
+  background: $zona1-hd2; */
+  background-color: rgba(221, 255, 188, 0.831372549);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.zona-1 nav div .logotipo {
+  visibility: hidden;
+}
+.zona-1 nav div .background-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(221, 255, 188, 0.831372549);
+}
+
+/* color zona5 y 6-redes */
+/* Extend aplica a:.encabezado div/ */
+/* aplica a: .background-nav/ */
+/* aplica a .autumn */
+/* aplica a: .zona-4 div/ */
+/* aplica a: .pasos/ */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #52734D;
+}
+
+.zona-2-desarrollo {
+  background-color: rgb(167, 189, 145);
+}
+
+.zona-3 {
+  background-color: #DDFFBC;
+}
+.zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: rgba(255, 192, 203, 0.797);
+}
+
+.zona-4 {
+  background-color: rgb(173, 175, 173), linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+.zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zona-5 {
+  background-color: #FEFFDE;
+}
+.zona-5 .pasos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* color zona5 y 6-redes */
+.zona-6 .mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "redes mapa";
+  overflow-x: hidden;
+}
+.zona-6 .mini-grid .redes {
+  grid-area: redes;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 90%;
+  height: auto;
+  background-color: #FEFFDE;
+}
+.zona-6 .mini-grid .mapa {
+  grid-area: mapa;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+  background-color: rgba(173, 194, 169, 0.7568627451);
+}
+
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 62, 5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+  overflow-x: hidden;
+}
+body .zona-1 {
+  grid-area: zona-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+}
+body .zona-2 {
+  grid-area: zona-2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  width: 100%;
+  height: auto;
+}
+body .zona-2-desarrollo {
+  grid-area: zona-2-desarrollo;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background: rgb(167, 189, 145);
+  background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+  width: 100%;
+  height: auto;
+  padding: 4% 1%;
+}
+body .zona-3 {
+  grid-area: zona-3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background-color: #DDFFBC;
+}
+body .zona-4 {
+  grid-area: zona-4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background: rgb(173, 175, 173);
+  background: linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+body .zona-5 {
+  grid-area: zona-5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  background-color: #FEFFDE;
+  width: 100%;
+  height: auto;
+}
+body .zona-6 {
+  grid-area: zona-6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 21;
+  width: 100%;
+  height: auto;
+}
+
+/* Extend aplica a:.encabezado div/ */
+/* aplica a: .background-nav/ */
+/* aplica a .autumn */
+/* aplica a: .zona-4 div/ */
+/* aplica a: .pasos/ */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #52734D;
+}
+
+/*# sourceMappingURL=style.css.map */
