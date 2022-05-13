@@ -1,0 +1,42 @@
+/* Extend aplica a:.encabezado div/ */
+$flex1:(
+    disp: flex,
+    dispo-h: space-around,
+    dispo-v: center,
+);
+/* aplica a: .background-nav/ */
+$flex2:(
+    disp: flex,
+    dispo-h: center,
+    dispo-v: center,
+);
+/* aplica a .autumn */
+$flex3:(
+    disp: flex,
+    f-dir: row,
+    dispo-h: center,
+    dispo-v: stretch,
+);
+/* aplica a: .zona-4 div/ */
+$flex4:(
+    disp: flex,
+    f-dir: column,
+    dispo-h: center,
+    dispo-v: center,
+);
+/* aplica a: .pasos/ */
+$flex5:(
+    disp: flex,
+    dispo-h: flex-start,
+    dispo-v: center,
+    f-dir: column,
+);
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: #52734D;
+}
+
+

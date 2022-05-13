@@ -1,0 +1,83 @@
+@import '../componentes/colores.scss';
+
+.zona-6 {
+    .mini-grid {
+        display: grid;
+        grid-template-columns: 650px 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: "redes mapa";
+        overflow-x: hidden;
+
+        .redes {
+            grid-area: redes;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            width: 100%;
+            height: auto;
+            background-color: $crema;
+
+            h3 {
+                color: map-get($color, color1);
+                font-weight: map-get($f-weight, f-w1);
+                text-align: map-get($dplay, txt-alg);
+                line-height: map-get($interlin, l-height5);
+                font-size: map-get($f-size, talle5);
+                padding: 8% 5%;
+            }
+
+            div {
+                display: map-get($flex2, disp);
+                justify-content: map-get($flex2, dispo-h);
+                align-items: map-get($flex2, dispo-v);
+
+                a {
+                    padding: 10%;
+                    align-items: center;
+                }
+            }
+        }
+
+        .mapa {
+            grid-area: mapa;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding: 5% 10%;
+            background-color: $mapa;
+            width: 100%;
+            height: auto;
+
+            div {
+                display: map-get($flex4, disp);
+                justify-content: map-get($flex4, dispo-h);
+                align-items: map-get($flex4, dispo-v);
+                flex-direction: map-get($flex4, f-dir);
+                width: 100%;
+                height: auto;
+
+                h3 {
+                    text-align: map-get($dplay, txt-alg);
+                    color: map-get($color, color7);
+                    font-style: italic;
+                    margin-right: 15%;
+                    padding-bottom: 6%;
+                    line-height: 2.5rem;
+                }
+
+                iframe {
+                    width: 80%;
+                    height: 60%;
+                    margin-right: 15%;
+                }
+            }
+        }
+    }
+
+    .pie {
+        background-color: $piecito;
+        line-height: map-get($interlin, l-height5);
+    }
+}
