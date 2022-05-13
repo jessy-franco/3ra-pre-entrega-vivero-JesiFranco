@@ -167,11 +167,14 @@ h1 {
 .zona-5 {
   background-color: #FEFFDE;
 }
-.zona-5 .pasos {
+.zona-5 .pasos div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-right: 15%;
 }
 .zona-5 .pasos div p {
   font-style: italic;
@@ -195,7 +198,7 @@ h1 {
 /* color zona5 y 6-redes */
 .zona-6 .mini-grid {
   display: grid;
-  grid-template-columns: repeat(2 1fr);
+  grid-template-columns: 650px 1fr;
   grid-auto-rows: auto;
   grid-template-areas: "redes mapa";
   overflow-x: hidden;
@@ -206,7 +209,7 @@ h1 {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  width: 90%;
+  width: 100%;
   height: auto;
   background-color: #FEFFDE;
 }
@@ -216,9 +219,16 @@ h1 {
   text-align: center;
   line-height: 1.6rem;
   font-size: 2rem;
+  padding: 8% 5%;
 }
-.zona-6 .mini-grid .redes a {
-  padding-left: 10%;
+.zona-6 .mini-grid .redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zona-6 .mini-grid .redes div a {
+  padding: 10%;
+  align-items: center;
 }
 .zona-6 .mini-grid .mapa {
   grid-area: mapa;
@@ -228,15 +238,26 @@ h1 {
   grid-row-end: 3;
   padding: 5% 10%;
   background-color: rgba(173, 194, 169, 0.7568627451);
+  width: 100%;
+  height: auto;
 }
-.zona-6 .mini-grid .mapa h3 {
+.zona-6 .mini-grid .mapa div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.zona-6 .mini-grid .mapa div h3 {
   text-align: center;
   color: green;
   font-style: italic;
-  margin-right: 10%;
+  margin-right: 15%;
   padding-bottom: 6%;
+  line-height: 2.5rem;
 }
-.zona-6 .mini-grid .mapa iframe {
+.zona-6 .mini-grid .mapa div iframe {
   width: 80%;
   height: 60%;
   margin-right: 15%;
