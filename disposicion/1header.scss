@@ -7,9 +7,7 @@
     .encabezado {
         div {
             background-color: $zona1-nav;
-            display: map-get($flex1, disp);
-            justify-content: map-get($flex1, dispo-h);
-            align-items: map-get($flex1, dispo-v);
+            @extend %flex1;
             padding: 1%;
             .dino-sucu {
                 padding: 1% 0%;
@@ -34,9 +32,7 @@
                 visibility: hidden;
             }
             .background-nav {
-                display: map-get($flex2, disp);
-                justify-content: map-get($flex2, dispo-h);
-                align-items: map-get($flex2, dispo-v);
+                @extend %flex2;
                 background-color: $zona1-nav;
                 width: map-get($tall-cont, ancho1);
                 height: map-get($tall-cont, alto2);

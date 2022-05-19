@@ -1,6 +1,7 @@
 @import '../componentes/colores.scss';
 @import '../componentes/map.scss';
 @import '../componentes/estilos.scss';
+@import '../componentes/extends.scss';
 
 .zona-2 {
     .presentacion {
@@ -51,10 +52,7 @@
     background-color: $zona3;
 
     .autumn {
-        display: map-get($flex3, disp);
-        flex-direction: map-get($flex3, f-dir);
-        justify-content: map-get($flex3, dispo-h);
-        align-items: map-get($flex3, dispo-v);
+        @extend %flex3;
         background-color: $zona3-autumn;
 
         .temporada {
@@ -87,10 +85,7 @@
     background-color: $zona4;
 
     div {
-        display: map-get($flex4, disp);
-        flex-direction: map-get($flex4, f-dir);
-        justify-content: map-get($flex4, dispo-h);
-        align-items: map-get($flex4, dispo-v);
+        @extend %flex4;
         padding: 0 2% 4% 2%;
         margin: 4% 8% 6% 6%;
 
@@ -108,12 +103,9 @@
 
     .pasos {
         div {
-            display: map-get($flex5, disp);
-            justify-content: map-get($flex5, dispo-h);
-            align-items: map-get($flex5, dispo-v);
-            flex-direction: map-get($flex5, f-dir);
-            width: 100%;
-            height: auto;
+            @extend %flex5;
+            width: map-get($tall-cont, ancho1);
+            height: map-get($tall-cont, alto1);
             margin-right: 15%;
             p {
                 font-style: italic;
