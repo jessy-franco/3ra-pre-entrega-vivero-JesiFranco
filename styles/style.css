@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 /* color zona5 y 6-redes */
 /* Extend aplica a:.encabezado div/ */
@@ -6,41 +5,27 @@
 /* aplica a .autumn */
 /* aplica a: .zona-4 div/ */
 /* aplica a: .pasos/ */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-style: italic;
-  color: #52734D;
-}
-
 /* estilos font */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-style: italic;
-}
-
 /* colores de fuente */
 /* tamaños de divs */
 /* background-image */
 /* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
 .zona-1 .encabezado div {
-  /* background: $zona1-header;
-  background: $zona1-hd2; */
   background-color: rgba(221, 255, 188, 0.831372549);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1%;
 }
-.zona-1 .encabezado div img {
+.zona-1 .encabezado div .dino-sucu {
   padding: 1% 0%;
   width: 120px;
   height: 120px;
 }
-.zona-1 .encabezado div img .animate__animated .animate__backInRight {
+.zona-1 .encabezado div .dino-sucu .animate__animated .animate__backInRight {
   --animate-duration: 2s;
 }
-.zona-1 .encabezado div img .animate__animated .animate__backInLeft {
+.zona-1 .encabezado div .dino-sucu .animate__animated .animate__backInLeft {
   --animate-duration: 2s;
 }
 .zona-1 nav div .logotipo {
@@ -61,20 +46,7 @@ h1 {
 /* aplica a .autumn */
 /* aplica a: .zona-4 div/ */
 /* aplica a: .pasos/ */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-style: italic;
-  color: #52734D;
-}
-
 /* estilos font */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-style: italic;
-}
-
 /* colores de fuente */
 /* tamaños de divs */
 /* background-image */
@@ -87,7 +59,7 @@ h1 {
   height: 20vh;
   padding: 2% 0% 50% 0%;
 }
-.zona-2 .presentacion div h2 {
+.zona-2 .presentacion div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
@@ -100,7 +72,7 @@ h1 {
 .zona-2-desarrollo {
   background-color: rgb(167, 189, 145);
 }
-.zona-2-desarrollo h3 {
+.zona-2-desarrollo h2 {
   color: #466142;
   line-height: 4.2rem;
   font-size: 1.8rem;
@@ -363,11 +335,5 @@ body .zona-6 {
 /* aplica a .autumn */
 /* aplica a: .zona-4 div/ */
 /* aplica a: .pasos/ */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-style: italic;
-  color: #52734D;
-}
 
 /*# sourceMappingURL=style.css.map */

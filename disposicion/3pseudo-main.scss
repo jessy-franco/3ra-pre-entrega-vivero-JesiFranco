@@ -13,7 +13,7 @@
         padding: 2% 0% 50% 0%;
 
         div {
-            h2 {
+            h1 {
                 color: map-get($color, color5);
                 font-weight: map-get($f-weight, f-w1);
                 text-align: map-get($dplay, txt-alg2);
@@ -29,7 +29,7 @@
 .zona-2-desarrollo {
     background-color: $zona2-des;
 
-    h3 {
+    h2 {
         color: map-get($color, color2);
         line-height: map-get($interlin, l-height);
         font-size: map-get($f-size, talle);
