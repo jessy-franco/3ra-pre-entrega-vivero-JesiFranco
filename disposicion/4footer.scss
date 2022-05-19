@@ -1,4 +1,5 @@
 @import '../componentes/colores.scss';
+@import '../componentes/extends.scss';
 
 .zona-6 {
     .mini-grid {
@@ -28,10 +29,7 @@
             }
 
             div {
-                display: map-get($flex2, disp);
-                justify-content: map-get($flex2, dispo-h);
-                align-items: map-get($flex2, dispo-v);
-
+                @extend %flex2;
                 a {
                     padding: 10%;
                     align-items: center;
