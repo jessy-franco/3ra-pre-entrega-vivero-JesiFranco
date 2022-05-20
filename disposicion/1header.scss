@@ -9,9 +9,9 @@
         div {
             background-color: $zona1-nav;
             @extend %flex1;
-            @include box-modeling (padding(1%));
+            @include box-modeling (1%);
             .dino-sucu {
-                @include box-modeling (padding(1%, 0%));
+                @include box-modeling (1%, 0%);
                 width: 120px;
                 height: 120px;
 

@@ -27,14 +27,14 @@
                 text-align: map-get($dplay, txt-alg);
                 line-height: map-get($interlin, l-height5);
                 font-size: map-get($f-size, talle5);
-                @include box-modeling (padding(8%, 5%));
+                @include box-modeling (8%, 5%);
             }
 
             div {
                 @extend %flex2;
 
                 a {
-                    @include box-modeling (padding(10%));
+                    @include box-modeling (10%);
                     align-items: map-get($dplay, txt-alg);
                 }
             }
@@ -46,7 +46,7 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 3;
-            @include box-modeling (padding(5%, 10%));
+            @include box-modeling (5%, 10%);
             background-color: $mapa;
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto1);
