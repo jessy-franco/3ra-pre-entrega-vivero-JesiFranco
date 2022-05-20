@@ -1,6 +1,7 @@
 @import '../componentes/colores.scss';
 @import '../componentes/estilos.scss';
 @import '../componentes/extends.scss';
+@import '../componentes/mixins.scss';
 
 .zona-2 {
     .presentacion {
@@ -10,15 +11,14 @@
         background-size: map-get($backg-img, size);
         width: map-get($tall-cont, ancho1);
         height: map-get($tall-cont, alto3);
-        padding: 2% 0% 50% 0%;
+        @include box-modeling (2%, 0, 50%, 0);
 
         div {
             h1 {
                 color: map-get($color, color5);
                 font-weight: map-get($f-weight, f-w1);
                 text-align: map-get($dplay, txt-alg2);
-                margin-top: 5%;
-                padding-left: 5%;
+                @include box-modeling3 (5%);
                 font-size: map-get($f-size, talle4);
                 line-height: map-get($interlin, l-height5);
             }
@@ -34,7 +34,7 @@
         line-height: map-get($interlin, l-height);
         font-size: map-get($f-size, talle);
         font-weight: map-get($f-weight, f-w1);
-        padding: 1% 0 1% 3%;
+        @include box-modeling (1%, 0, 1%, 3%);
     }
 
     p {
@@ -43,7 +43,7 @@
         font-size: map-get($f-size, talle2);
         font-style: italic;
         font-weight: map-get($f-weight, f-w3);
-        padding: 0.5% 3%;
+        @include box-modeling (0.5%, 3%);
     }
 }
 
@@ -60,7 +60,7 @@
             background-position: map-get($backg-img, posit);
             background-repeat: map-get($backg-img, ntrepeat);
             background-size: map-get($backg-img, size);
-            padding-bottom: 10%;
+            @include box-modeling4 (10%);
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto5);
 
@@ -73,7 +73,7 @@
                     font-size: map-get($f-size, talle2);
                     line-height: map-get($interlin, l-height3);
                     text-align: map-get($dplay, txt-alg);
-                    margin: 4.5% 2% 4.5% 4%;
+                    @include box-modeling2 (4.5%, 2%, 4.5%, 4%)
                 }
             }
         }
@@ -85,8 +85,8 @@
 
     div {
         @extend %flex4;
-        padding: 0 2% 4% 2%;
-        margin: 4% 8% 6% 6%;
+        @include box-modeling (0, 2%, 4%, 2%);
+        @include box-modeling2 (4%, 8%, 6%, 6%);
 
         h3 {
             line-height: map-get($interlin, l-height3);
@@ -105,7 +105,7 @@
             @extend %flex5;
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto1);
-            margin-right: 15%;
+            @include box-modeling5 (15%);
             p {
                 font-style: italic;
                 font-weight: map-get($f-weight, f-w1);
@@ -114,7 +114,7 @@
                 color: map-get($color, color1);
                 display: map-get($dplay, dplay1);
                 text-align: map-get($dplay, txt-alg);
-                margin: 5%;
+                @include box-modeling (5%);
             }
         }
     }
@@ -125,6 +125,6 @@
         background-image: url(https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?cs=srgb&dl=pexels-cole-keister-3144214.jpg&fm=jpg);
         background-position: map-get($backg-img, posit);
         background-size: map-get($backg-img, size);
-        padding: 5%;
+        @include box-modeling (5%);
     }
 }

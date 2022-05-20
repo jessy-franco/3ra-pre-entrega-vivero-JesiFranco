@@ -1,0 +1,16 @@
+@mixin box-modeling ($modelado) {
+    padding: $modelado;
+}
+@mixin box-modeling2 ($modelado2) {
+    margin: $modelado2;
+}
+@mixin box-modeling3 ($modelado3) {
+    padding-left: $modelado3;
+    margin-top: $modelado3;
+}
+@mixin box-modeling4 ($modelado4) {
+    padding-bottom: $modelado4;
+}
+@mixin box-modeling5 ($modelado5) {
+    margin-right: $modelado5;
+}

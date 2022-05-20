@@ -1,6 +1,7 @@
 @import '../componentes/colores.scss';
 @import '../componentes/extends.scss';
 @import '../componentes/estilos.scss';
+@import '../componentes/mixins.scss';
 
 .zona-6 {
     .mini-grid {
@@ -26,14 +27,14 @@
                 text-align: map-get($dplay, txt-alg);
                 line-height: map-get($interlin, l-height5);
                 font-size: map-get($f-size, talle5);
-                padding: 8% 5%;
+                @include box-modeling (8%, 5%);
             }
 
             div {
                 @extend %flex2;
 
                 a {
-                    padding: 10%;
+                    @include box-modeling (10%);
                     align-items: map-get($dplay, txt-alg);
                 }
             }
@@ -45,7 +46,7 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 3;
-            padding: 5% 10%;
+            @include box-modeling (5%, 10%);
             background-color: $mapa;
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto1);
@@ -59,15 +60,15 @@
                     text-align: map-get($dplay, txt-alg);
                     color: map-get($color, color7);
                     font-style: italic;
-                    margin-right: 15%;
-                    padding-bottom: 6%;
+                    @include box-modeling5 (15%);
+                    @include box-modeling4 (6%);
                     line-height: map-get($interlin, l-height6);
                 }
 
                 iframe {
                     width: map-get($tall-cont, ancho3);
                     height: map-get($tall-cont, alto4);
-                    margin-right: 15%;
+                    @include box-modeling5 (15%);
                 }
             }
         }

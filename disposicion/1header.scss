@@ -1,6 +1,7 @@
 @import '../componentes/colores.scss';
 @import '../componentes/estilos.scss';
 @import '../componentes/extends.scss';
+@import '../componentes/mixins.scss';
 
 /* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
 .zona-1 {
@@ -8,9 +9,9 @@
         div {
             background-color: $zona1-nav;
             @extend %flex1;
-            padding: 1%;
+            @include box-modeling (1%);
             .dino-sucu {
-                padding: 1% 0%;
+                @include box-modeling (1%, 0%);
                 width: 120px;
                 height: 120px;
 
