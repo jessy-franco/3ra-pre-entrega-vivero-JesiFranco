@@ -42,7 +42,7 @@
         font-size: map-get($f-size, talle2);
         font-style: italic;
         font-weight: map-get($f-weight, f-w3);
-        @include box-modeling (0.5%, 3%);
+        @include box-modeling6 (0.5%, 3%);
     }
 }
 
@@ -113,7 +113,7 @@
                 color: map-get($color, color1);
                 display: map-get($dplay, dplay1);
                 text-align: map-get($dplay, txt-alg);
-                @include box-modeling (5%);
+                @include box-modeling0 (5%);
             }
         }
     }
@@ -124,6 +124,6 @@
         background-image: url(https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?cs=srgb&dl=pexels-cole-keister-3144214.jpg&fm=jpg);
         background-position: map-get($backg-img, posit);
         background-size: map-get($backg-img, size);
-        @include box-modeling (5%);
+        @include box-modeling0 (5%);
     }
 }
