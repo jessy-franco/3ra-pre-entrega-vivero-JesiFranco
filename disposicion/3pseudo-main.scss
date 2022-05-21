@@ -12,7 +12,6 @@
         width: map-get($tall-cont, ancho1);
         height: map-get($tall-cont, alto3);
         @include box-modeling (2%, 0, 50%, 0);
-
         div {
             h1 {
                 color: map-get($color, color5);
