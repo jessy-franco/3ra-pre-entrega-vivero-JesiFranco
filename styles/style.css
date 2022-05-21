@@ -1,23 +1,455 @@
-/* Error: Missing argument $bottom.
- *   ,--> disposicion\4footer.scss
- * 30|                 @include box-modeling (8%, 5%);
- *   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> componentes\mixins.scss
- * 1 | @mixin box-modeling ($top, $right, $bottom, $left) {
- *   |        =========================================== declaration
- *   '
- *   disposicion\4footer.scss 30:17  box-modeling()
- *   disposicion\4footer.scss 30:17  @import
- *   scss\style.scss 3:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $bottom.\a   \250c \2500 \2500 > disposicion\\4footer.scss\a 30\2502                  @include box-modeling (8%, 5%);\d\a   \2502                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > componentes\\mixins.scss\a 1 \2502  @mixin box-modeling ($top, $right, $bottom, $left) {\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   disposicion\\4footer.scss 30:17  box-modeling()\a   disposicion\\4footer.scss 30:17  @import\a   scss\\style.scss 3:9             root stylesheet";
+@charset "UTF-8";
+/* color zona5 y 6-redes */
+/* estilos usando maps */
+/* estilos font */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+/* Extend aplica a:.encabezado div/ */
+.zona-1 .encabezado div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div, .zona-1 nav div .background-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
+.zona-1 .encabezado div {
+  background-color: rgba(221, 255, 188, 0.831372549);
+  padding: 1%;
+}
+.zona-1 .encabezado div .dino-sucu {
+  padding: 1% 0%;
+  width: 120px;
+  height: 120px;
+}
+.zona-1 .encabezado div .dino-sucu .animate__animated .animate__backInRight {
+  --animate-duration: 2s;
+}
+.zona-1 .encabezado div .dino-sucu .animate__animated .animate__backInLeft {
+  --animate-duration: 2s;
+}
+.zona-1 nav div .logotipo {
+  visibility: hidden;
+}
+.zona-1 nav div .background-nav {
+  background-color: rgba(221, 255, 188, 0.831372549);
+  width: 100%;
+  height: 10vh;
+}
+
+/* color zona5 y 6-redes */
+/* estilos usando maps */
+/* estilos font */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+/* Extend aplica a:.encabezado div/ */
+.zona-1 .encabezado div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div, .zona-1 nav div .background-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zona-2 .presentacion {
+  background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0 50% 0;
+}
+.zona-2 .presentacion div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+}
+
+.zona-2-desarrollo {
+  background-color: rgb(167, 189, 145);
+}
+.zona-2-desarrollo h2 {
+  color: #466142;
+  line-height: 4.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1% 0 1% 3%;
+}
+.zona-2-desarrollo p {
+  color: #52734D;
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 550;
+  padding: 0.5% 3%;
+}
+
+.zona-3 {
+  background-color: #DDFFBC;
+}
+.zona-3 .autumn {
+  background-color: rgba(255, 192, 203, 0.797);
+}
+.zona-3 .autumn .temporada {
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/02/21/56/sheet-2810487_1280.jpg);
+  opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+}
+.zona-3 .autumn .temporada div p {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  margin: 4.5% 2% 4.5% 4%;
+}
+
+.zona-4 {
+  background-color: rgb(173, 175, 173), linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+.zona-4 div {
+  padding: 0 2% 4% 2%;
+  margin: 4% 8% 6% 6%;
+}
+.zona-4 div h3 {
+  line-height: 3rem;
+  font-size: 1.2rem;
+  color: rgb(80, 78, 78);
+  text-align: center;
+}
+
+.zona-5 {
+  background-color: #FEFFDE;
+}
+.zona-5 .pasos div {
+  width: 100%;
+  height: auto;
+  margin-right: 15%;
+}
+.zona-5 .pasos div p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #52734D;
+  display: inline-block;
+  text-align: center;
+  padding: 5%;
+}
+.zona-5 .separador1 {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?cs=srgb&dl=pexels-cole-keister-3144214.jpg&fm=jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+/* color zona5 y 6-redes */
+/* Extend aplica a:.encabezado div/ */
+.zona-1 .encabezado div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div, .zona-1 nav div .background-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* estilos usando maps */
+/* estilos font */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+.zona-6 .mini-grid {
+  display: grid;
+  grid-template-columns: 650px 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "redes mapa";
+  overflow-x: hidden;
+}
+.zona-6 .mini-grid .redes {
+  grid-area: redes;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+  background-color: #FEFFDE;
+}
+.zona-6 .mini-grid .redes h3 {
+  color: #52734D;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 2rem;
+  padding: 8% 5%;
+}
+.zona-6 .mini-grid .redes div a {
+  padding: 10%;
+  align-items: center;
+}
+.zona-6 .mini-grid .mapa {
+  grid-area: mapa;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 5% 10%;
+  background-color: rgba(173, 194, 169, 0.7568627451);
+  width: 100%;
+  height: auto;
+}
+.zona-6 .mini-grid .mapa div {
+  width: 100%;
+  height: auto;
+}
+.zona-6 .mini-grid .mapa div h3 {
+  text-align: center;
+  color: green;
+  font-style: italic;
+  margin-right: 15%;
+  padding-bottom: 6%;
+  line-height: 2.5rem;
+}
+.zona-6 .mini-grid .mapa div iframe {
+  width: 80%;
+  height: 60%;
+  margin-right: 15%;
+}
+.zona-6 .pie {
+  background-color: #99A799;
+  line-height: 1.6rem;
+}
+
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 62, 5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+  overflow-x: hidden;
+}
+body .zona-1 {
+  grid-area: zona-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+}
+body .zona-2 {
+  grid-area: zona-2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  width: 100%;
+  height: auto;
+}
+body .zona-2-desarrollo {
+  grid-area: zona-2-desarrollo;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background: rgb(167, 189, 145);
+  background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+  width: 100%;
+  height: auto;
+  padding: 4% 1%;
+}
+body .zona-3 {
+  grid-area: zona-3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background-color: #DDFFBC;
+}
+body .zona-4 {
+  grid-area: zona-4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background: rgb(173, 175, 173);
+  background: linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+body .zona-5 {
+  grid-area: zona-5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  background-color: #FEFFDE;
+  width: 100%;
+  height: auto;
+}
+body .zona-6 {
+  grid-area: zona-6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 21;
+  width: 100%;
+  height: auto;
+}
+
+/* Extend aplica a:.encabezado div/ */
+.zona-1 .encabezado div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-1 nav div .background-nav, .zona-6 .mini-grid .redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-4 div, .zona-6 .mini-grid .mapa div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

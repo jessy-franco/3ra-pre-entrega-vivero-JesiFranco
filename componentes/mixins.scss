@@ -1,8 +1,8 @@
-@mixin box-modeling ($top, $right, $bottom, $left) {
-    padding: $top, $right, $bottom, $left;
+@mixin box-modeling ($modelado...) {
+    padding: $modelado;
 }
-@mixin box-modeling2 ($top, $right, $bottom, $left) {
-    margin: $top, $right, $bottom, $left;
+@mixin box-modeling2 ($modelado2) {
+    margin: $modelado2;
 }
 @mixin box-modeling3 ($modelado3) {
     padding-left: $modelado3;
@@ -13,11 +13,4 @@
 }
 @mixin box-modeling5 ($modelado5) {
     margin-right: $modelado5;
-}
-
-@mixin box-modeling6 ($top-bot, $left-right) {
-    padding: $top-bot, $left-right;
-}
-@mixin box-modeling0($modelado0) {
-    padding: $modelado0;
 }
