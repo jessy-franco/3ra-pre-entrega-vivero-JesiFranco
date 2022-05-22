@@ -1,10 +1,105 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400;1,500&display=swap");
+body {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+  overflow-x: hidden;
+}
+body .zona-1 {
+  grid-area: zona-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+}
+body .zona-2 {
+  grid-area: zona-2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  width: 100%;
+  height: auto;
+}
+body .zona-2-desarrollo {
+  grid-area: zona-2-desarrollo;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background: rgb(167, 189, 145);
+  background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+  width: 100%;
+  height: auto;
+  padding: 4% 1%;
+}
+body .zona-3 {
+  grid-area: zona-3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background-color: #DDFFBC;
+}
+body .zona-4 {
+  grid-area: zona-4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background: rgb(173, 175, 173);
+  background: linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+body .zona-5 {
+  grid-area: zona-5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  background-color: #FEFFDE;
+  width: 100%;
+  height: auto;
+}
+body .zona-6 {
+  grid-area: zona-6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 21;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 62, 5%;
+}
+
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 /* color zona5 y 6-redes */
+/* boton */
 /* estilos usando maps */
 /* estilos font */
+/* estilo de lista */
 /* colores de fuente */
 /* tamaños de divs */
 /* background-image */
+/* estilo de fuentes */
+/* bordes */
 /* Extend aplica a:.encabezado div/ */
 .zona-1 .encabezado div {
   display: flex;
@@ -20,7 +115,7 @@
 }
 
 /* aplica a .autumn */
-.zona-3 .autumn {
+.zona-3 .capacitacion, .zona-3 .autumn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,6 +136,18 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+.zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
 }
 
 /* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
@@ -69,11 +176,15 @@
 }
 
 /* color zona5 y 6-redes */
+/* boton */
 /* estilos usando maps */
 /* estilos font */
+/* estilo de lista */
 /* colores de fuente */
 /* tamaños de divs */
 /* background-image */
+/* estilo de fuentes */
+/* bordes */
 /* Extend aplica a:.encabezado div/ */
 .zona-1 .encabezado div {
   display: flex;
@@ -89,7 +200,7 @@
 }
 
 /* aplica a .autumn */
-.zona-3 .autumn {
+.zona-3 .capacitacion, .zona-3 .autumn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,6 +223,18 @@
   flex-direction: column;
 }
 
+.zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
 .zona-2 .presentacion {
   background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
   background-position: center;
@@ -121,16 +244,6 @@
   height: 20vh;
   padding: 2% 0 50% 0;
 }
-.zona-2 .presentacion div h1 {
-  color: whitesmoke;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 5%;
-  margin-top: 5%;
-  font-size: 2.5rem;
-  line-height: 1.6rem;
-}
-
 .zona-2-desarrollo {
   background-color: rgb(167, 189, 145);
 }
@@ -218,7 +331,139 @@
   padding: 5%;
 }
 
+/* Inicia servicios html */
+/* Inicia servicios portada */
+.zona-2 .servicios {
+  background-image: url(https://images.pexels.com/photos/68470/pexels-photo-68470.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0% 50% 0%;
+}
+.zona-2-desarrollo h3 {
+  color: #466142;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1%;
+}
+.zona-2-desarrollo h4 {
+  color: #466142;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1%;
+  font-style: oblique;
+  text-decoration: underline;
+}
+.zona-2-desarrollo ul {
+  color: #52734D;
+  list-style: circle;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  font-style: italic;
+  font-weight: 550;
+  padding: 3%;
+}
+
+/* fin servicios portada */
+/* ----------inicia capacitacion-------- */
+/* -----inicio zona-3------ */
+.zona-3 .capacitacion {
+  width: 100%;
+  height: 100%;
+}
+.zona-3 .capacitacion h5 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+  padding: 6% 0 4% 0;
+}
+.zona-3 .capacitacion ul {
+  list-style: circle;
+  font-size: 1.2rem;
+  color: #52734D;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding: 3%;
+}
+
+/* -------fin zona 3-------- */
+/* -------inicia zona-4----- */
+.zona-4 .capa {
+  font-size: 1.2rem;
+  color: #466142;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 10%;
+  padding-top: 5%;
+}
+.zona-4 .capa h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+}
+.zona-4 .capa h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: italic;
+  color: #466142;
+  padding: 8% 0 20% 0;
+}
+
+/* fin zona 4 */
+/* inicio zona 5 */
+.zona-5 .boton {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: bottom;
+  background-size: cover;
+  padding: 5%;
+  text-align: center;
+}
+.zona-5 .boton h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding: 2% 0 4% 0;
+}
+.zona-5 .boton a {
+  background-color: #DDFFBC;
+  text-decoration: none;
+  color: #52734D;
+  padding: 2%;
+  border: 2px solid #52734D;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+.zona-5 .boton a:hover {
+  background-color: rgba(26, 71, 19, 0.4235294118);
+  color: #DDFFBC;
+  padding: 4%;
+  border: 4px solid #DDFFBC;
+  border-radius: 20px;
+  transition: all 2s;
+  width: 15%;
+  height: auto;
+  font-size: 1.8rem;
+}
+
 /* color zona5 y 6-redes */
+/* boton */
 /* Extend aplica a:.encabezado div/ */
 .zona-1 .encabezado div {
   display: flex;
@@ -234,7 +479,7 @@
 }
 
 /* aplica a .autumn */
-.zona-3 .autumn {
+.zona-3 .autumn, .zona-3 .capacitacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -257,11 +502,26 @@
   flex-direction: column;
 }
 
+.zona-2 .presentacion div h1, .zona-2 .servicios div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
 /* estilos usando maps */
 /* estilos font */
+/* estilo de lista */
 /* colores de fuente */
 /* tamaños de divs */
 /* background-image */
+/* estilo de fuentes */
+/* bordes */
 .zona-6 .mini-grid {
   display: grid;
   grid-template-columns: 650px 1fr;
@@ -322,134 +582,6 @@
 .zona-6 .pie {
   background-color: #99A799;
   line-height: 1.6rem;
-}
-
-/* reseteo */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-}
-
-html {
-  font-family: "EB Garamond", serif;
-  font-size: 62, 5%;
-}
-
-body {
-  display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-auto-rows: auto;
-  grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
-  overflow-x: hidden;
-}
-body .zona-1 {
-  grid-area: zona-1;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 100%;
-  height: auto;
-}
-body .zona-2 {
-  grid-area: zona-2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 6;
-  width: 100%;
-  height: auto;
-}
-body .zona-2-desarrollo {
-  grid-area: zona-2-desarrollo;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 6;
-  grid-row-end: 9;
-  background: rgb(167, 189, 145);
-  background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
-  width: 100%;
-  height: auto;
-  padding: 4% 1%;
-}
-body .zona-3 {
-  grid-area: zona-3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 12;
-  width: 100%;
-  height: auto;
-  background-color: #DDFFBC;
-}
-body .zona-4 {
-  grid-area: zona-4;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 9;
-  grid-row-end: 12;
-  width: 100%;
-  height: auto;
-  background: rgb(173, 175, 173);
-  background: linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
-}
-body .zona-5 {
-  grid-area: zona-5;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 12;
-  grid-row-end: 16;
-  background-color: #FEFFDE;
-  width: 100%;
-  height: auto;
-}
-body .zona-6 {
-  grid-area: zona-6;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 16;
-  grid-row-end: 21;
-  width: 100%;
-  height: auto;
-}
-
-/* Extend aplica a:.encabezado div/ */
-.zona-1 .encabezado div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* aplica a: .background-nav/ */
-.zona-1 nav div .background-nav, .zona-6 .mini-grid .redes div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* aplica a .autumn */
-.zona-3 .autumn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/* aplica a: .zona-4 div/ */
-.zona-4 div, .zona-6 .mini-grid .mapa div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* aplica a: .pasos/ */
-.zona-5 .pasos div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

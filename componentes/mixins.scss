@@ -14,3 +14,9 @@
 @mixin box-modeling5 ($modelado5) {
     margin-right: $modelado5;
 }
+@mixin box-modeling6 ($modelado6) {
+    margin-top: $modelado6;
+}
+@mixin box-modeling7($modelado7){
+    padding-top: $modelado7;
+}

@@ -11,15 +11,11 @@
         background-size: map-get($backg-img, size);
         width: map-get($tall-cont, ancho1);
         height: map-get($tall-cont, alto3);
-        @include box-modeling (2% 0 50% 0); 
+        @include box-modeling (2% 0 50% 0);
+
         div {
             h1 {
-                color: map-get($color, color5);
-                font-weight: map-get($f-weight, f-w1);
-                text-align: map-get($dplay, txt-alg2);
-                @include box-modeling3 (5%);
-                font-size: map-get($f-size, talle4);
-                line-height: map-get($interlin, l-height5);
+                @extend %h1;
             }
         }
     }
@@ -40,7 +36,7 @@
         color: map-get($color, color1);
         line-height: map-get($interlin, l-height2);
         font-size: map-get($f-size, talle2);
-        font-style: italic;
+        font-style: map-get($font-stl, ital);
         font-weight: map-get($f-weight, f-w3);
         @include box-modeling (0.5% 3%);
     }
@@ -68,7 +64,7 @@
                     color: map-get($color, color3);
                     font-weight: map-get($f-weight, f-w2);
                     font-weight: map-get($f-weight, f-w1);
-                    font-style: italic;
+                    font-style: map-get($font-stl, ital);
                     font-size: map-get($f-size, talle2);
                     line-height: map-get($interlin, l-height3);
                     text-align: map-get($dplay, txt-alg);
@@ -91,7 +87,7 @@
             line-height: map-get($interlin, l-height3);
             font-size: map-get($f-size, talle3);
             color: map-get($color, color4);
-            text-align: center;
+            text-align: map-get($dplay, txt-alg);
         }
     }
 }
@@ -105,8 +101,9 @@
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto1);
             @include box-modeling5 (15%);
+
             p {
-                font-style: italic;
+                font-style: map-get($font-stl, ital);
                 font-weight: map-get($f-weight, f-w1);
                 font-size: map-get($f-size, talle4);
                 line-height: map-get($interlin, l-height4);
@@ -125,5 +122,165 @@
         background-position: map-get($backg-img, posit);
         background-size: map-get($backg-img, size);
         @include box-modeling (5%);
+    }
+}
+
+/* Inicia servicios html */
+/* Inicia servicios portada */
+.zona-2 {
+    .servicios {
+        background-image: url(https://images.pexels.com/photos/68470/pexels-photo-68470.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+        background-position: map-get($backg-img, posit);
+        background-repeat: map-get($backg-img, ntrepeat);
+        background-size: map-get($backg-img, size);
+        width: map-get($tall-cont, ancho1);
+        height: map-get($tall-cont, alto3);
+
+        @include box-modeling (2% 0% 50% 0%);
+
+        div {
+            h1 {
+                @extend %h1;
+            }
+        }
+    }
+}
+
+.zona-2-desarrollo {
+    h3 {
+        color: map-get($color, color2);
+        line-height: map-get($interlin, l-height3);
+        font-size: map-get($f-size, talle5);
+        font-weight: map-get($f-weight, f-w1);
+        @include box-modeling (1%);
+    }
+
+    h4 {
+        color: map-get($color, color2);
+        line-height: map-get($interlin, l-height3);
+        font-size: map-get($f-size, talle6);
+        font-weight: map-get($f-weight, f-w1);
+        @include box-modeling (1%);
+        font-style: map-get($font-stl, f-styl);
+        text-decoration: map-get($dplay, txt-deco);
+    }
+
+    ul {
+        color: map-get($color, color1);
+        list-style: map-get($l-style, list-stl);
+        font-size: map-get($f-size, talle3);
+        line-height: map-get($interlin, l-height2);
+        font-style: map-get($font-stl, ital);
+        font-weight: map-get($f-weight, f-w3);
+        @include box-modeling (3%);
+    }
+}
+
+/* fin servicios portada */
+/* ----------inicia capacitacion-------- */
+/* -----inicio zona-3------ */
+.zona-3 {
+    .capacitacion {
+        @extend %flex3;
+        width: map-get($tall-cont, ancho1);
+        height: map-get($tall-cont, alto5);
+
+        h5 {
+            font-size: map-get($f-size, talle7);
+            line-height: map-get($interlin, l-height7);
+            text-align: map-get($dplay, txt-alg);
+            font-style: map-get($font-stl, ital);
+            color: map-get($color, color2);
+            @include box-modeling(6% 0 4% 0);
+        }
+
+        ul {
+            list-style: map-get($l-style, list-stl);
+            font-size: map-get($f-size, talle3);
+            color: map-get($color, color1);
+            line-height: map-get($interlin, l-height5);
+            text-align: map-get($dplay, txt-alg);
+            font-style: map-get($font-stl, ital);
+            font-weight: map-get($f-weight, f-w4);
+            @include box-modeling(3%);
+        }
+    }
+}
+
+/* -------fin zona 3-------- */
+/* -------inicia zona-4----- */
+.zona-4 {
+    .capa {
+        font-size: map-get($f-size, talle3);
+        color: map-get($color, color2);
+        line-height: map-get($interlin, l-height5);
+        text-align: map-get($dplay, txt-alg);
+        font-style: map-get($font-stl, ital);
+        font-weight: map-get($f-weight, f-w4);
+        @include box-modeling6 (10%);
+        @include box-modeling7 (5%);
+
+        h3 {
+            font-size: map-get($f-size, talle);
+            line-height: map-get($interlin, l-height8);
+            text-align: map-get($dplay, txt-alg);
+            font-style: map-get($font-stl, ital);
+            color: map-get($color, color2);
+        }
+
+        h4 {
+            font-size: map-get($f-size, talle2);
+            line-height: map-get($interlin, l-height7);
+            text-align: map-get($dplay, txt-alg);
+            font-size: map-get($font-stl, ital);
+            color: map-get($color, color2);
+            @include box-modeling(8% 0 20% 0);
+        }
+    }
+}
+
+/* fin zona 4 */
+/* inicio zona 5 */
+
+.zona-5 {
+    .boton {
+        width: map-get($tall-cont, ancho2);
+        height: map-get($tall-cont, alto1);
+        background-image: url(https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-position: map-get($backg-img, posit2);
+        background-size: map-get($backg-img, size);
+        @include box-modeling (5%);
+        text-align: map-get($dplay, txt-alg);
+
+        h3 {
+            font-size: map-get($f-size, talle);
+            line-height: map-get($interlin, l-height8);
+            text-align: map-get($dplay, txt-alg);
+            font-style: map-get($font-stl, ital);
+            color: map-get($color, color3);
+            @include box-modeling(2% 0 4% 0);
+        }
+
+        a {
+            background-color: $zona3;
+            text-decoration: none;
+            color: map-get($color, color1);
+            @include box-modeling (2%);
+            border: map-get($bord, bor1);
+            border-radius: map-get($bord, bor-rad);
+            font-size:map-get($f-size, talle3) ;
+
+            &:hover {
+                background-color: $bnt-color ;
+                color: map-get($color, color8);
+                @include box-modeling(4%);
+                border: map-get($bord, bor2);
+                border-radius: map-get($bord, bor-rad);
+                transition: all 2s;
+                width: 15%;
+                height: auto;
+                font-size: map-get($f-size, talle);
+            }
+        }
     }
 }

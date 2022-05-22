@@ -7,11 +7,14 @@ $interlin:(
     l-height4: 4rem,
     l-height5: 1.6rem,
     l-height6: 2.5rem,
+    l-height7: 2rem,
+    l-height8: 1.8rem,
 );
 $f-weight:(
     f-w1: bold,
     f-w2: 600,
     f-w3: 550,
+    f-w4:500,
 );
 $f-size:(
     talle: 1.8rem,
@@ -19,15 +22,17 @@ $f-size:(
     talle3: 1.2rem,
     talle4: 2.5rem,
     talle5: 2rem,
+    talle6:1.6rem,
+    talle7:1.4rem,
 
 );
 $dplay:( 
     dplay1: inline-block,
     txt-alg: center,
     txt-alg2:left,
-    f-styl: oblique,
     txt-deco: underline,
 );
+/* estilo de lista */
 $l-style:(
     list-stl: circle,
 );
@@ -40,6 +45,8 @@ $color:(
     color5: whitesmoke,
     color6:#172415,
     color7:green,
+    color8: #DDFFBC,
+
 );
 /* tamaños de divs */
 
@@ -59,6 +66,18 @@ $tall-cont:(
 /* background-image */
 $backg-img:(
     posit: center,
+    posit2:bottom,
     size: cover,
     ntrepeat: no-repeat,
+);
+/* estilo de fuentes */
+$font-stl:(
+    ital: italic,
+    f-styl: oblique,
+);
+/* bordes */
+$bord:(
+    bor1: 2px solid #52734D,
+    bor2:4px solid #DDFFBC,
+    bor-rad: 20px,
 );
