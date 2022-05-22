@@ -20,3 +20,6 @@
 @mixin box-modeling7($modelado7){
     padding-top: $modelado7;
 }
+@mixin box-modeling8($modelado8) {
+    padding-left: ($modelado8);
+}
