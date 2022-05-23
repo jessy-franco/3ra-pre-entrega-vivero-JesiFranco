@@ -78,6 +78,14 @@ body .zona-6 {
   height: auto;
 }
 
+@media only screen and (max-width: 450px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    overflow-x: hidden;
+  }
+}
 html {
   font-family: "EB Garamond", serif;
   font-size: 62, 5%;
@@ -178,6 +186,7 @@ html {
   height: auto;
 }
 
+/* media query extend body display */
 /* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
 .zona-1 .encabezado div {
   background-color: rgba(221, 255, 188, 0.831372549);
@@ -291,6 +300,7 @@ html {
   height: auto;
 }
 
+/* media query extend body display */
 .zona-2 .presentacion {
   background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
   background-position: center;
@@ -299,11 +309,6 @@ html {
   width: 100%;
   height: 20vh;
   padding: 2% 0 50% 0;
-}
-.zona-2 .presentacion div {
-  background-color: rgba(82, 115, 77, 0.4588235294);
-  padding: 0 2%;
-  margin-left: 2%;
 }
 .zona-2-desarrollo {
   background-color: rgb(167, 189, 145);
@@ -542,11 +547,6 @@ html {
   height: 20vh;
   padding: 2% 0% 50% 0%;
 }
-.zona-2 .presentacion-productos div {
-  background-color: rgba(82, 115, 77, 0.4588235294);
-  padding: 0 2%;
-  margin-left: 2%;
-}
 /* fin zona-2 productos */
 /* Inicia  zona-2-desarrollo galeria de productos */
 .zona-2-desarrollo section .sub-titulo {
@@ -761,11 +761,6 @@ html {
   background-size: cover;
   padding: 2% 0% 50% 0%;
 }
-.zona-2 .contacto div {
-  background-color: rgba(82, 115, 77, 0.4588235294);
-  padding: 0 2%;
-  margin-left: 2%;
-}
 /*---fin presentacion contacto----*/
 /*-----Comienzo ficha-----*/
 .zona-2-desarrollo .ficha {
@@ -919,6 +914,7 @@ html {
   height: auto;
 }
 
+/* media query extend body display */
 /* estilos usando maps */
 /* estilos font */
 /* estilo de lista */
@@ -987,6 +983,163 @@ html {
 .zona-6 .pie {
   background-color: #99A799;
   line-height: 1.6rem;
+}
+
+/* @media queries */
+/* mobile */
+@media only screen and (max-width: 450px) {
+  .zona1 .encabezado div .dino-sucu {
+    width: 60px;
+    height: 60px;
+  }
+  .zona1 .encabezado nav div .background-nav ul li a {
+    font-size: 0.5rem;
+  }
+
+  /* inicia ------index.html ------*/
+  /* inicia zona-2 presentacion y zona-2 desarrollo */
+  .zona-2 .presentacion div h1 {
+    font-size: 1.5rem;
+  }
+
+  .zona-2-desarrollo h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .zona-2-desarrollo p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  /* fin zona-2 */
+  /* inicia zona-3 temporada */
+  .zona-3 .autumn .temporada div {
+    width: 100%;
+    height: auto;
+  }
+  .zona-3 .autumn .temporada div p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+
+  /* fin zona-3 temporada */
+  /* inicia zona-4 videos informativos */
+  body {
+    /* fin zona-4 videos */
+    /* inicia zona-5 pasos */
+  }
+  body .zona-4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 15;
+  }
+  body .zona-4 div h3 {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+  body .zona-5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 15;
+    grid-row-end: 19;
+  }
+  body .zona-5 .pasos div {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  /* fin zona-5 pasos */
+  /* inicia zona-6 footer */
+  .zona-6 {
+    grid-row-start: 19;
+    grid-row-end: 25;
+  }
+  .zona-6 .mini-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .zona-6 .mini-grid .redes h3 {
+    line-height: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a {
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .mapa div h3 {
+    line-height: 1.6rem;
+  }
+  .zona-6 .mini-grid .mapa div iframe {
+    width: 80%;
+    height: 60%;
+    margin: 0;
+  }
+
+  /* fin zona-6 footer */
+  /* ---------fin index html------ */
+  /* ----inicia servicios.html--- */
+  /* zona-2 servicios */
+  .zona-2 .servicios div h1 {
+    font-size: 1.5rem;
+  }
+
+  .zona-2-desarrollo h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .zona-2-desarrollo h4 {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .zona-2-desarrollo ul {
+    list-style: circle;
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  /* fin zona-2 */
+  /* ----------inicia capacitacion-------- */
+  /* -----inicio zona-3------ */
+  .zona-3 .capacitacion div div h5 {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .zona-3 .capacitacion div div ul {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* -------fin zona 3-------- */
+  /* fin servicios portada */
+  /* -------inicia zona-4----- */
+  .zona-4 .capa {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .zona-4 .capa h3 {
+    font-size: 1.5rem;
+  }
+  .zona-4 .capa h4 {
+    font-size: 1.2rem;
+  }
+
+  /*-------fin zona-4------ */
+  /*-------inicio zona-5------ */
+  .zona-5 .imagenes-cursos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* fin zona-5 */
+  /* -----------------FIN SERVICIOS.HTML----------- */
 }
 
 /*# sourceMappingURL=style.css.map */

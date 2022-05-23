@@ -1,0 +1,244 @@
+
+/* @media queries */
+
+/* mobile */
+@media only screen and (max-width:450px) {
+    .zona1 {
+        .encabezado {
+            div {
+                .dino-sucu {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            nav {
+                div {
+                    .background-nav {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* inicia ------index.html ------*/
+    /* inicia zona-2 presentacion y zona-2 desarrollo */
+    .zona-2 {
+        .presentacion {
+            div {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .zona-2-desarrollo {
+        h2 {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    /* fin zona-2 */
+    /* inicia zona-3 temporada */
+    .zona-3 {
+        .autumn {
+            .temporada {
+                div {
+                    width: 100%;
+                    height: auto;
+
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /* fin zona-3 temporada */
+    /* inicia zona-4 videos informativos */
+    body {
+        .zona-4 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 12;
+            grid-row-end: 15;
+
+            div {
+                h3 {
+                    line-height: 3rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        /* fin zona-4 videos */
+        /* inicia zona-5 pasos */
+        .zona-5 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 15;
+            grid-row-end: 19;
+
+            .pasos {
+                div {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+
+    /* fin zona-5 pasos */
+    /* inicia zona-6 footer */
+    .zona-6 {
+        grid-row-start: 19;
+        grid-row-end: 25;
+
+        .mini-grid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .redes {
+                h3 {
+                    line-height: 0.5rem;
+                    font-size: 1.5rem;
+                    padding-top: 5%;
+                }
+
+                div {
+                    a {
+                        padding-left: 10%;
+                        padding-top: 5%;
+                    }
+                }
+
+            }
+
+            .mapa {
+                div {
+                    h3 {
+                        line-height: 1.6rem;
+                    }
+
+                    iframe {
+                        width: 80%;
+                        height: 60%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* fin zona-6 footer */
+    /* ---------fin index html------ */
+    /* ----inicia servicios.html--- */
+
+    /* zona-2 servicios */
+    .zona-2 {
+        .servicios {
+            div {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .zona-2-desarrollo {
+        h3 {
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            line-height: 2rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: circle;
+            font-size: 0.8rem;
+            line-height: 2;
+            font-weight: 400;
+        }
+    }
+
+    /* fin zona-2 */
+    /* ----------inicia capacitacion-------- */
+    /* -----inicio zona-3------ */
+    .zona-3 {
+        .capacitacion {
+            div {
+                div {
+                    h5 {
+                        font-size: 1rem;
+                        line-height: 2;
+                    }
+
+                    ul {
+                        font-size: 0.8rem;
+                        line-height: 1.6;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    /* -------fin zona 3-------- */
+    /* fin servicios portada */
+    /* -------inicia zona-4----- */
+    .zona-4 {
+        .capa {
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    /*-------fin zona-4------ */
+    /*-------inicio zona-5------ */
+    .zona-5 {
+        .imagenes-cursos {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    /* fin zona-5 */
+    /* -----------------FIN SERVICIOS.HTML----------- */
+
+
+
+
+
+
+}
