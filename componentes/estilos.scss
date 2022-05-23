@@ -9,12 +9,14 @@ $interlin:(
     l-height6: 2.5rem,
     l-height7: 2rem,
     l-height8: 1.8rem,
+    l-height9: 5rem,
 );
 $f-weight:(
     f-w1: bold,
     f-w2: 600,
     f-w3: 550,
     f-w4:500,
+    f-w5: lighter,
 );
 $f-size:(
     talle: 1.8rem,
@@ -25,6 +27,8 @@ $f-size:(
     talle6:1.6rem,
     talle7:1.4rem,
     talle8:3rem,
+    talle9:1rem,
+    talle10:1.1rem,
 
 );
 $dplay:( 
@@ -37,6 +41,7 @@ $dplay:(
 /* estilo de lista */
 $l-style:(
     list-stl: circle,
+    list-stl2:none,
 );
 /* colores de fuente */
 $color:(

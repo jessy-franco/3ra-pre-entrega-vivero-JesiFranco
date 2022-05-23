@@ -138,7 +138,27 @@ html {
   flex-direction: column;
 }
 
-.zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+.zona-2-desarrollo .somos section .rex, .zona-4 .publi-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .presentacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
@@ -223,7 +243,27 @@ html {
   flex-direction: column;
 }
 
-.zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+.zona-2-desarrollo .somos section .rex, .zona-4 .publi-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .presentacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
@@ -463,6 +503,222 @@ html {
   font-size: 1.8rem;
 }
 
+/*-------fin zona-4------ */
+/*  --------fin capacitacion-------*/
+/*-----------INICIA PRODUCTOS.HTML------- */
+/* ------inicia zona-2 productos---- */
+.zona-2 .presentacion-productos {
+  background-image: url(https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?cs=srgb&dl=pexels-cottonbro-4503823.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0% 50% 0%;
+}
+/* fin zona-2 productos */
+/* Inicia  zona-2-desarrollo galeria de productos */
+.zona-2-desarrollo section .sub-titulo {
+  padding: 5%;
+}
+.zona-2-desarrollo section .sub-titulo h2 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.zona-2-desarrollo section .talle {
+  width: 70%;
+  height: auto;
+}
+.zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+  color: whitesmoke;
+}
+.zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+  color: #DDFFBC;
+}
+
+/* fin .zona-2-desarrollo galeria productos */
+/* inicia zona-3 nuestros productos */
+.zona-3 .nuestros-productos {
+  font-size: 1.2rem;
+  color: #466142;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding-top: 5%;
+  margin: 2%;
+}
+.zona-3 .nuestros-productos h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+}
+
+/* FIN ZONA-3 NUESTROS-productos */
+/* inicia zona-4 publi-imagenes */
+.zona-4 .publi-imagenes {
+  padding: 5%;
+}
+.zona-4 .publi-imagenes img {
+  padding: 5% 1%;
+}
+
+/* fin zona-4 publi-imagenes */
+/* Inicia zona-5 boton de descarga/separador */
+.zona-5 .boton2 {
+  background-image: url(https://images.pexels.com/photos/2968327/pexels-photo-2968327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+}
+.zona-5 .boton2 h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding: 1% 0 5% 0;
+}
+.zona-5 .boton2 a {
+  background-color: #FEFFDE;
+  text-decoration: none;
+  color: green;
+  padding: 2%;
+  border: 2px solid #52734D;
+  border-radius: 20px;
+}
+.zona-5 .boton2 a:hover {
+  background-color: rgba(26, 71, 19, 0.4235294118);
+  color: #DDFFBC;
+  padding: 4%;
+  border: 4px solid #DDFFBC;
+  border-radius: 20px;
+  transition: all 2s;
+  width: 15%;
+  height: auto;
+  font-size: 1.8rem;
+}
+
+/* fin zona-5 boton de descarga/separador */
+/*----Fin publicidad productos------*/
+/* ------FIN PRODUCTOS.HTML----- */
+/*-------INICIO NOSOTROS HTML------*/
+/*------Comienza pseudo-main-----*/
+/*----comienza presentacion----*/
+/* inicia zona-2 nosotros */
+.zona-2 .presentacion-nosotros {
+  width: 100%;
+  height: auto;
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/22/08/07/singapore-zoo-2164309_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2% 0% 50% 0%;
+}
+.zona-2 .presentacion-nosotros div {
+  background-color: rgba(82, 115, 77, 0.4588235294);
+  padding: 0 2%;
+  margin-left: 2%;
+}
+/*------Fin presentacion------*/
+.zona-2-desarrollo .somos {
+  width: 100%;
+  height: 100%;
+}
+.zona-2-desarrollo .somos section {
+  width: 50%;
+  height: auto;
+}
+.zona-2-desarrollo .somos section .rex {
+  width: 100%;
+  height: auto;
+  padding: 5% 0% 0% 5%;
+  margin-right: 2%;
+}
+.zona-2-desarrollo .somos .vivero {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding: 5% 5% 7.5% 5%;
+}
+.zona-2-desarrollo .somos .vivero h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.zona-2-desarrollo .somos .vivero p {
+  text-align: center;
+  font-weight: lighter;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+/*------Fin somos----*/
+/* -----------inicio zona-3------------- */
+.zona-3 .dino {
+  margin-top: 15%;
+}
+
+/* -----------fin zona-3----------------- */
+/* -----------inicio zona-4------------- */
+/*----comienzo impacto-----*/
+.zona-4 .impacto {
+  width: 100%;
+  height: 100%;
+  background-color: #FEFFDE;
+  padding: 5% 5% 7.5% 5%;
+}
+.zona-4 .impacto h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #52734D;
+}
+.zona-4 .impacto p {
+  text-align: center;
+  font-weight: lighter;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding-right: 7%;
+  padding-bottom: 3%;
+  color: #52734D;
+}
+.zona-4 .impacto ul {
+  list-style: none;
+  font-size: 1.1rem;
+  color: #52734D;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding: 3%;
+}
+
+/*-------Fin impacto-----*/
+/* -----------fin zona-4------------- */
+/* -----------inicia zona-5--------- */
+/*-------comienzo separador-----*/
+.separador2 {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/5720098/pexels-photo-5720098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+/*-----Fin separador-----*/
+/*-------fin NOSOTROS HTML------*/
 /* color zona5 y 6-redes */
 /* boton */
 /* Extend aplica a:.encabezado div/ */
@@ -503,7 +759,27 @@ html {
   flex-direction: column;
 }
 
-.zona-2 .presentacion div h1, .zona-2 .servicios div h1 {
+.zona-4 .publi-imagenes, .zona-2-desarrollo .somos section .rex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .presentacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2 .presentacion div h1, .zona-2 .servicios div h1, .zona-2 .presentacion-productos div h1, .zona-2 .presentacion-nosotros div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;

@@ -23,3 +23,9 @@
 @mixin box-modeling8($modelado8) {
     padding-left: ($modelado8);
 }
+@mixin box-modeling9($modelado9){
+    margin-left: $modelado9;
+}
+@mixin box-modeling10($modelado10){
+padding-right: $modelado10;
+} 

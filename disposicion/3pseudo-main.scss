@@ -290,6 +290,7 @@
 /*  --------fin capacitacion-------*/
 /*-----------INICIA PRODUCTOS.HTML------- */
 /* ------inicia zona-2 productos---- */
+
 .zona-2 .presentacion-productos {
     background-image: url(https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?cs=srgb&dl=pexels-cottonbro-4503823.jpg&fm=jpg);
     background-position: map-get($backg-img, posit);
@@ -300,16 +301,8 @@
     @include box-modeling(2% 0% 50% 0%);
 
     div {
-        h2 {
-            color: map-get($color, color5);
-            font-weight: map-get($f-weight, f-w1);
-            text-align: map-get($dplay, txt-alg2);
-            @include box-modeling6(5%);
-            @include box-modeling8 (5%);
-            font-size: map-get($f-size, talle4);
-            line-height: map-get($interlin, l-height5);
-            width: map-get($tall-cont, ancho1);
-            height: map-get($tall-cont, alto1);
+        h1 {
+            @extend %h1;
         }
     }
 }
@@ -335,6 +328,10 @@
             .car-in {
                 .car-item {
                     .tip-color {
+                        h3 {
+                            color: map-get($color, color5);
+                        }
+
                         p {
                             color: $zona3;
                         }
@@ -425,7 +422,140 @@
     }
 }
 
-
 /* fin zona-5 boton de descarga/separador */
 /*----Fin publicidad productos------*/
 /* ------FIN PRODUCTOS.HTML----- */
+/*-------INICIO NOSOTROS HTML------*/
+
+/*------Comienza pseudo-main-----*/
+/*----comienza presentacion----*/
+/* inicia zona-2 nosotros */
+.zona-2 {
+    .presentacion-nosotros {
+        @extend %flex7;
+        width: map-get($tall-cont, ancho1);
+        height: map-get($tall-cont, alto1);
+        background-image: url(https://cdn.pixabay.com/photo/2017/03/22/08/07/singapore-zoo-2164309_1280.jpg);
+        background-position: map-get($backg-img, posit);
+        background-repeat: map-get($backg-img, ntrepeat);
+        background-size: map-get($backg-img, size);
+        @include box-modeling(2% 0% 50% 0%);
+
+        div {
+            background-color: $zona2-nos;
+            @include box-modeling(0 2%);
+            @include box-modeling9(2%);
+
+            h1 {
+                @extend %h1;
+            }
+        }
+    }
+}
+
+/*------Fin presentacion------*/
+.zona-2-desarrollo {
+    .somos {
+        @extend %flex8;
+        width: map-get($tall-cont, ancho1);
+        height: map-get($tall-cont, alto5);
+
+        section {
+            width: map-get($tall-cont, ancho6);
+            height: map-get($tall-cont, alto1);
+
+            .rex {
+                width: map-get($tall-cont, ancho1);
+                height: map-get($tall-cont, alto1);
+                @include box-modeling(5% 0% 0% 5%);
+                @include box-modeling5(2%);
+                @extend %flex6;
+            }
+        }
+
+        .vivero {
+            width: map-get($tall-cont, ancho6);
+            height: map-get($tall-cont, alto1);
+            text-align: map-get($dplay, txt-alg);
+            @include box-modeling(5% 5% 7.5% 5%);
+
+            h3 {
+                text-align: map-get($dplay, txt-alg);
+                font-weight: map-get($f-weight, f-w1);
+                line-height: map-get($interlin, l-height3);
+                font-size: map-get($f-size, talle2);
+                font-style: map-get($font-stl, ital);
+            }
+
+            p {
+                text-align: map-get($dplay, txt-alg);
+                font-weight: map-get($f-weight, f-w5);
+                line-height: map-get($interlin, l-height7);
+                font-size: map-get($f-size, talle9);
+            }
+        }
+    }
+}
+
+/*------Fin somos----*/
+/* -----------inicio zona-3------------- */
+.zona-3 {
+    .dino {
+        @include box-modeling6(15%);
+    }
+}
+
+/* -----------fin zona-3----------------- */
+
+/* -----------inicio zona-4------------- */
+/*----comienzo impacto-----*/
+.zona-4 {
+    .impacto {
+        width: map-get($tall-cont, ancho1);
+        height: map-get($tall-cont, alto5);
+        background-color: $crema;
+        @include box-modeling(5% 5% 7.5% 5%);
+        h3 {
+            text-align: map-get($dplay, txt-alg);
+            font-weight: map-get($f-weight, f-w1);
+            line-height: map-get($interlin, l-height9);
+            font-size: map-get($f-size, talle2);
+            font-style: map-get($font-stl, ital);
+            color: map-get($color, color1);
+        }
+        p {
+            text-align: map-get($dplay, txt-alg);
+            font-weight: map-get($f-weight, f-w5);
+            line-height: map-get($interlin, l-height7);
+            font-size:map-get($f-size, talle9);
+            @include box-modeling10(7%);
+            @include box-modeling4(3%);
+            color:map-get($color, color1);
+        }
+        ul {
+            list-style: map-get($l-style, list-stl2);
+            font-size: map-get($f-size, talle10);
+            color:map-get($color, color1);
+            line-height: map-get($interlin, l-height5);
+            text-align: map-get($dplay, txt-alg);
+            font-style: map-get($font-stl, ital);
+            font-weight: map-get($f-weight, f-w4);
+            @include box-modeling(3%);
+        }
+    } 
+}
+/*-------Fin impacto-----*/
+/* -----------fin zona-4------------- */
+/* -----------inicia zona-5--------- */
+/*-------comienzo separador-----*/
+.separador2 {
+    width:map-get($tall-cont, ancho2);
+    height: map-get($tall-cont, alto1);
+    background-image: url(https://images.pexels.com/photos/5720098/pexels-photo-5720098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: map-get($backg-img, posit);
+    background-size: map-get($backg-img, size);
+    @include box-modeling(5%);
+}
+
+/*-----Fin separador-----*/
+/*-------fin NOSOTROS HTML------*/
