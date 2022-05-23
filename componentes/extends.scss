@@ -55,6 +55,12 @@
     justify-content: flex-start;
     align-items: stretch;
 }
+%flex9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
 
 %h1 {
     color: whitesmoke;

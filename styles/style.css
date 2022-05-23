@@ -91,6 +91,7 @@ html {
 }
 
 /* color zona5 y 6-redes */
+/* background color h1 */
 /* boton */
 /* estilos usando maps */
 /* estilos font */
@@ -123,7 +124,7 @@ html {
 }
 
 /* aplica a: .zona-4 div/ */
-.zona-6 .mini-grid .mapa div, .zona-4 div {
+.zona-6 .mini-grid .mapa div, .zona-2-desarrollo .ficha div .form-ubicacion, .zona-4 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +132,7 @@ html {
 }
 
 /* aplica a: .pasos/ */
-.zona-5 .pasos div {
+.zona-2-desarrollo .ficha, .zona-5 .pasos div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -144,7 +145,7 @@ html {
   align-items: flex-start;
 }
 
-.zona-2 .presentacion-nosotros {
+.zona-2 .contacto, .zona-2 .presentacion-nosotros {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,7 +159,14 @@ html {
   align-items: stretch;
 }
 
-.zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .contacto div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
@@ -196,6 +204,7 @@ html {
 }
 
 /* color zona5 y 6-redes */
+/* background color h1 */
 /* boton */
 /* estilos usando maps */
 /* estilos font */
@@ -228,7 +237,7 @@ html {
 }
 
 /* aplica a: .zona-4 div/ */
-.zona-6 .mini-grid .mapa div, .zona-4 div {
+.zona-6 .mini-grid .mapa div, .zona-2-desarrollo .ficha div .form-ubicacion, .zona-4 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +245,7 @@ html {
 }
 
 /* aplica a: .pasos/ */
-.zona-5 .pasos div {
+.zona-2-desarrollo .ficha, .zona-5 .pasos div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -249,7 +258,7 @@ html {
   align-items: flex-start;
 }
 
-.zona-2 .presentacion-nosotros {
+.zona-2 .contacto, .zona-2 .presentacion-nosotros {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,7 +272,14 @@ html {
   align-items: stretch;
 }
 
-.zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .contacto div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
@@ -283,6 +299,11 @@ html {
   width: 100%;
   height: 20vh;
   padding: 2% 0 50% 0;
+}
+.zona-2 .presentacion div {
+  background-color: rgba(82, 115, 77, 0.4588235294);
+  padding: 0 2%;
+  margin-left: 2%;
 }
 .zona-2-desarrollo {
   background-color: rgb(167, 189, 145);
@@ -381,6 +402,11 @@ html {
   width: 100%;
   height: 20vh;
   padding: 2% 0% 50% 0%;
+}
+.zona-2 .servicios div {
+  background-color: rgba(82, 115, 77, 0.4588235294);
+  padding: 0 2%;
+  margin-left: 2%;
 }
 .zona-2-desarrollo h3 {
   color: #466142;
@@ -515,6 +541,11 @@ html {
   width: 100%;
   height: 20vh;
   padding: 2% 0% 50% 0%;
+}
+.zona-2 .presentacion-productos div {
+  background-color: rgba(82, 115, 77, 0.4588235294);
+  padding: 0 2%;
+  margin-left: 2%;
 }
 /* fin zona-2 productos */
 /* Inicia  zona-2-desarrollo galeria de productos */
@@ -711,7 +742,7 @@ html {
 .separador2 {
   width: 90%;
   height: auto;
-  background-image: url(https://images.pexels.com/photos/5720098/pexels-photo-5720098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/88502/tulips-holland-tulip-fields-royalty-free-88502.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-position: center;
   background-size: cover;
   padding: 5%;
@@ -719,7 +750,97 @@ html {
 
 /*-----Fin separador-----*/
 /*-------fin NOSOTROS HTML------*/
+/*-------INICIO CONTACTO HTML------*/
+/*---comienza presentacion contacto----*/
+.zona-2 .contacto {
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/2896280/pexels-photo-2896280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2% 0% 50% 0%;
+}
+.zona-2 .contacto div {
+  background-color: rgba(82, 115, 77, 0.4588235294);
+  padding: 0 2%;
+  margin-left: 2%;
+}
+/*---fin presentacion contacto----*/
+/*-----Comienzo ficha-----*/
+.zona-2-desarrollo .ficha {
+  background-image: url(https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.zona-2-desarrollo .ficha div {
+  background-color: rgba(254, 255, 222, 0.498);
+  padding: 5% 5% 8% 5%;
+}
+.zona-2-desarrollo .ficha div h2 {
+  text-align: center;
+  font-style: italic;
+  line-height: 3rem;
+  color: #172415;
+  font-size: 2rem;
+  color: #466142;
+  font-weight: bold;
+}
+.zona-2-desarrollo .ficha div ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #466142;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion {
+  width: 70%;
+  height: auto;
+  margin: 10%;
+  background-color: rgba(255, 192, 203, 0.797);
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form {
+  background-color: #FEFFDE;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  padding: 0%;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin .pad {
+  padding: 0%;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+  text-align: center;
+  color: green;
+  font-style: italic;
+  line-height: 3.2rem;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+/*----fin ficha-----*/
+/*-------Comienzo separador----*/
+.separador3 {
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/8892905/pexels-photo-8892905.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0;
+}
+
+/*------fin separador-----*/
+/*------FIN CONTACTO HTML-----*/
 /* color zona5 y 6-redes */
+/* background color h1 */
 /* boton */
 /* Extend aplica a:.encabezado div/ */
 .zona-1 .encabezado div {
@@ -744,7 +865,7 @@ html {
 }
 
 /* aplica a: .zona-4 div/ */
-.zona-6 .mini-grid .mapa div, .zona-4 div {
+.zona-6 .mini-grid .mapa div, .zona-4 div, .zona-2-desarrollo .ficha div .form-ubicacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -752,7 +873,7 @@ html {
 }
 
 /* aplica a: .pasos/ */
-.zona-5 .pasos div {
+.zona-5 .pasos div, .zona-2-desarrollo .ficha {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -765,7 +886,7 @@ html {
   align-items: flex-start;
 }
 
-.zona-2 .presentacion-nosotros {
+.zona-2 .presentacion-nosotros, .zona-2 .contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -779,7 +900,14 @@ html {
   align-items: stretch;
 }
 
-.zona-2 .presentacion div h1, .zona-2 .servicios div h1, .zona-2 .presentacion-productos div h1, .zona-2 .presentacion-nosotros div h1 {
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .presentacion div h1, .zona-2 .servicios div h1, .zona-2 .presentacion-productos div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .contacto div h1 {
   color: whitesmoke;
   font-weight: bold;
   text-align: left;
