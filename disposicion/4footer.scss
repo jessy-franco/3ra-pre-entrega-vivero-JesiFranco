@@ -78,4 +78,46 @@
         background-color: $piecito;
         line-height: map-get($interlin, l-height5);
     }
+
+    @media only screen and (max-width:450px) {
+        .mini-grid {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            .redes {
+                h3 {
+                    line-height: map-get($z6redesh3mob, l-height);
+                    font-size: map-get($z6redesh3mob, f-size);
+                    padding-top: map-get($z6redesh3mob, pad-top);
+                }
+
+                div {
+                    a {
+                        padding-left: map-get($z6redesimg, pad-left);
+                        padding-top: map-get($z6redesimg, pad-top);
+                    }
+                }
+
+            }
+
+            .mapa {
+                div {
+                    h3 {
+                        text-align: map-get($z6maph3, txt-alg);
+                        line-height: map-get($z6maph3, l-height);
+                        padding: map-get($z6maph3, pad);
+                    }
+
+                    iframe {
+                        width: map-get($z6mapiframe, ancho);
+                        height: map-get($z6mapiframe, alto);
+                        margin: map-get($z6mapiframe, marg);
+                        padding-bottom: map-get($z6mapiframe, pad-bot);
+                    }
+                }
+            }
+        }
+    }
 }

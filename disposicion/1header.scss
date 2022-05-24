@@ -3,42 +3,69 @@
 @import '../componentes/extends.scss';
 @import '../componentes/mixins.scss';
 
+
 /* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
-.zona-1 {
-    .encabezado {
-        div {
-            background-color: $zona1-nav;
-            @extend %flex1;
-            @include box-modeling (1%);
-            .dino-sucu {
-                @include box-modeling (1% 0%);
-                width: 120px;
-                height: 120px;
-
-                .animate__animated .animate__backInRight {
-                    --animate-duration: 2s;
-                }
-
-                .animate__animated .animate__backInLeft {
-                    --animate-duration: 2s;
-                }
-
-            }
-        }
-    }
-
-    nav {
-        div {
-            .logotipo {
-                visibility: hidden;
-            }
-            .background-nav {
-                @extend %flex2;
+body {
+    .zona-1 {
+        .encabezado {
+            div {
                 background-color: $zona1-nav;
-                width: map-get($tall-cont, ancho1);
-                height: map-get($tall-cont, alto2);
+                @extend %flex1;
+                @include box-modeling (1%);
+
+                .dino-sucu {
+                    @include box-modeling (1% 0%);
+                    width: 120px;
+                    height: 120px;
+
+                    .animate__animated .animate__backInRight {
+                        --animate-duration: 2s;
+                    }
+
+                    .animate__animated .animate__backInLeft {
+                        --animate-duration: 2s;
+                    }
+
+                }
+
+                @media only screen and(max-width:450px) {
+                    .dino-sucu {
+                        padding: 1% 0%;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .log-img {
+                        width: 100px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+        nav {
+            div {
+                .logotipo {
+                    visibility: hidden;
+                }
+
+                .background-nav {
+                    @extend %flex2;
+                    background-color: $zona1-nav;
+                    width: map-get($tall-cont, ancho1);
+                    height: map-get($tall-cont, alto2);
+
+                    ul {
+                        li {
+                            a {
+                                @media only screen and(max-width:450px) {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
 }
