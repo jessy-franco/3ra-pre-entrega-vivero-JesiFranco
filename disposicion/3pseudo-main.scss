@@ -21,6 +21,10 @@
                 @media only screen and (max-width:450px) {
                     font-size: map-get($h1mob, f-size);
                 }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -40,6 +44,11 @@
             font-size: map-get($h2mob, f-size);
             line-height: map-get($h2mob, l-height);
         }
+
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
 
     p {
@@ -55,7 +64,10 @@
             line-height: map-get($pmob, l-height);
         }
 
-        ;
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
 
     }
 }
@@ -67,6 +79,11 @@
         @extend %flex3;
         background-color: $zona3-autumn;
 
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            width: 100%;
+            height: 100%;
+        }
+
         .temporada {
             background-image: url(https://cdn.pixabay.com/photo/2017/10/02/21/56/sheet-2810487_1280.jpg);
             opacity: 0.75;
@@ -76,6 +93,11 @@
             @include box-modeling4 (10%);
             width: map-get($tall-cont, ancho1);
             height: map-get($tall-cont, alto5);
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 100%;
+                height: auto;
+            }
 
             div {
                 p {
@@ -94,15 +116,17 @@
                         text-align: map-get($divpz3mob, txt-alg);
                     }
 
-                    ;
+                    @media only screen and (min-width:451px) and (max-width:960px) {
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+                        padding: 5%;
+                    }
                 }
 
                 @media only screen and (max-width:450px) {
                     width: map-get($divz3mob, ancho1);
                     height: map-get($divz3mob, alto1);
                 }
-
-                ;
             }
         }
     }
@@ -125,6 +149,18 @@
             @media only screen and (max-width:450px) {
                 line-height: map-get($h3mob, l-height);
                 font-size: map-get($h3mob, f-size);
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        iframe {
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 80%;
+                height: auto;
             }
         }
 
@@ -154,6 +190,11 @@
                 @media only screen and (max-width:450px) {
                     font-size: map-get($divpz5mob, f-size);
                     line-height: map-get($divpz5mob, l-height);
+                }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
                 }
             }
 
@@ -200,6 +241,10 @@
                 @media only screen and (max-width:450px) {
                     font-size: map-get($h1mob, f-size);
                 }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -217,6 +262,11 @@
             font-size: map-get($h2mob, f-size);
             line-height: map-get($h2mob, l-height);
         }
+
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
 
     h3 {
@@ -231,6 +281,11 @@
         @media only screen and (max-width:450px) {
             line-height: map-get($h3mob, l-height);
             font-size: map-get($h3mob, f-size);
+        }
+
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            line-height: 2rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -248,6 +303,15 @@
             font-size: map-get($ulmob, f-size);
             line-height: map-get($ulmob, l-height);
             font-weight: map-get($ulmob, f-weight);
+            padding: 10%;
+        }
+
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            list-style: circle;
+            font-size: 1rem;
+            line-height: 2;
+            font-weight: 500;
+            padding: 10%;
         }
     }
 }
@@ -273,6 +337,11 @@
                 line-height: map-get($h4mob, l-height);
                 font-size: map-get($h4mob, f-size);
             }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: 1.2rem;
+                line-height: 2;
+            }
         }
 
         ul {
@@ -290,6 +359,15 @@
                 font-size: map-get($ulmob, f-size);
                 line-height: map-get($ulmob, l-height);
                 font-weight: map-get($ulmob, f-weight);
+                padding: 10%;
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: 1rem;
+                line-height: 1.8;
+                font-weight: 500;
+                margin: 0 5%;
+                padding: 0 5%;
             }
         }
     }
@@ -314,6 +392,12 @@
             text-align: map-get($z4capamob, txt-alg);
         }
 
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
         h3 {
             font-size: map-get($f-size, talle);
             line-height: map-get($interlin, l-height8);
@@ -324,6 +408,11 @@
 
             @media only screen and (max-width:450px) {
                 font-size: map-get($h3mob, f-size2);
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.5rem;
             }
         }
 
@@ -338,6 +427,10 @@
             @media only screen and (max-width:450px) {
                 font-size: map-get($h4mob, f-size2);
             }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -347,10 +440,8 @@
 
 .zona-5 {
     .imagenes-cursos {
-        @media only screen and (max-width:450px) {
-            display: map-get($z5imgcurmob, dplay);
-            flex-direction: map-get($z5imgcurmob, f-dir);
-        }
+        display: flex;
+        flex-direction: row;
     }
 
     .boton {
@@ -375,6 +466,11 @@
                 font-size: map-get($h3mob, f-size);
 
             }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.2rem;
+            }
         }
 
         a {
@@ -385,6 +481,10 @@
             border: map-get($bord, bor1);
             border-radius: map-get($bord, bor-rad);
             font-size: map-get($f-size, talle3);
+
+            @media only screen and (max-width:450px) {
+                font-size: map-get($pmob, f-size2);
+            }
 
             &:hover {
                 background-color: $bnt-color ;
@@ -397,6 +497,7 @@
                 height: auto;
                 font-size: map-get($f-size, talle);
             }
+
         }
     }
 }
@@ -422,6 +523,10 @@
             @media only screen and (max-width:450px) {
                 font-size: map-get($h1mob, f-size);
             }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: 1.8rem;
+            }
         }
     }
 }
@@ -441,6 +546,11 @@
                 @media only screen and(max-width: 450px) {
                     font-size: map-get($h2mob, f-size2);
                 }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
             }
         }
 
@@ -453,10 +563,28 @@
                     .tip-color {
                         h3 {
                             color: map-get($color, color5);
+
+                            @media only screen and(max-width: 450px) {
+                                font-size: map-get($h3mob, f-size4);
+                            }
+
+                            @media only screen and (min-width:451px) and (max-width:960px) {
+                                line-height: 2rem;
+                                font-size: 1.2rem;
+                            }
                         }
 
                         p {
                             color: $zona3;
+
+                            @media only screen and(max-width: 450px) {
+                                font-size: map-get($pmob, f-size3);
+                            }
+
+                            @media only screen and (min-width:451px) and (max-width:960px) {
+                                font-size: 1rem;
+                                line-height: 1.5rem;
+                            }
                         }
                     }
                 }
@@ -481,6 +609,12 @@
         @media only screen and(max-width: 450px) {
             font-size: map-get($divpz3mob, f-size2);
             font-weight: map-get($divpz3mob, l-height2);
+            padding: 10%;
+        }
+
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            width: 100%;
+            height: 100%;
         }
 
         h3 {
@@ -494,12 +628,32 @@
                 font-size: map-get($h3mob, f-size2);
             }
 
-            .florcita {
-                @media only screen and(max-width: 450px) {
-                    visibility: hidden;
-                }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.5rem;
             }
         }
+
+        p {
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                padding: 0 10% 5% 0;
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 2;
+                text-align: center;
+            }
+        }
+
+        .florcita {
+            @media only screen and(max-width: 450px) {
+                display: none;
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 40%;
+                height: auto;
+            }
+        }
+
     }
 }
 
@@ -510,8 +664,25 @@
         @include box-modeling(5%);
         @extend %flex6;
 
+        @media only screen and(max-width: 450px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+        }
+
         img {
             @include box-modeling(5% 1%);
+        }
+
+        .img-publi {
+            @media only screen and(max-width: 450px) {
+                display: none;
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                display: none;
+            }
+            
         }
     }
 }
@@ -535,8 +706,14 @@
             font-style: map-get($font-stl, ital);
             color: map-get($color, color3);
             @include box-modeling(1% 0 5% 0);
+
             @media only screen and(max-width: 450px) {
                 font-size: map-get($h3mob, f-size2);
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -593,6 +770,10 @@
                 @media only screen and (max-width:450px) {
                     font-size: map-get($h1mob, f-size);
                 }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -611,6 +792,12 @@
             justify-content: stretch;
             align-items: flex-start;
         }
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: stretch;
+            align-items: flex-start;
+        }
 
         section {
             width: map-get($tall-cont, ancho6);
@@ -622,10 +809,10 @@
                 @include box-modeling(5% 0% 0% 5%);
                 @include box-modeling5(2%);
                 @extend %flex6;
-
-                @media only screen and (max-width:450px) {
-                    width: map-get($z2desmob, ancho1);
-                    height: map-get($z2desmob, alto1);
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    padding: 2% 10% 2% 15% ;
+        width: 80%;
+        height: auto;
                 }
             }
         }
@@ -635,9 +822,14 @@
             height: map-get($tall-cont, alto1);
             text-align: map-get($dplay, txt-alg);
             @include box-modeling(5% 5% 7.5% 5%);
+
             @media only screen and (max-width:450px) {
                 width: map-get($z2desmob, ancho1);
                 height: map-get($z2desmob, alto1);
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 90%;
+        height: auto;
             }
 
             h3 {
@@ -646,8 +838,14 @@
                 line-height: map-get($interlin, l-height3);
                 font-size: map-get($f-size, talle2);
                 font-style: map-get($font-stl, ital);
+
                 @media only screen and(max-width: 450px) {
                     font-size: map-get($h3mob, f-size2);
+                }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    line-height: 2rem;
+                    font-size: 1.2rem;
                 }
             }
 
@@ -656,9 +854,15 @@
                 font-weight: map-get($f-weight, f-w5);
                 line-height: map-get($interlin, l-height7);
                 font-size: map-get($f-size, talle9);
+
                 @media only screen and (max-width:450px) {
-                    font-size: map-get($divpz5mob, f-size);
-                    line-height: map-get($divpz5mob, l-height);
+                    font-size: map-get($pmob, f-size2);
+                    line-height: map-get($pmob, l-height3);
+                }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                 }
             }
         }
@@ -670,6 +874,17 @@
 .zona-3 {
     .dino {
         @include box-modeling6(15%);
+
+        @media only screen and(max-width: 450px) {
+            padding-left: 10%;
+        }
+    }
+    img{
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            width: 100%;
+        height: auto;
+        padding-top: 30%;
+        }
     }
 }
 
@@ -683,9 +898,14 @@
         height: map-get($tall-cont, alto5);
         background-color: $crema;
         @include box-modeling(5% 5% 7.5% 5%);
+
         @media only screen and (max-width:450px) {
             width: map-get($divz4mob, ancho1);
             height: map-get($divz4mob, alto1);
+        }
+        @media only screen and (min-width:451px) and (max-width:960px) {
+            width: 90%;
+        height: 100%;
         }
 
         h3 {
@@ -695,9 +915,15 @@
             font-size: map-get($f-size, talle2);
             font-style: map-get($font-stl, ital);
             color: map-get($color, color1);
+
             @media only screen and (max-width:450px) {
                 font-size: map-get($h3mob, f-size3);
                 line-height: map-get($h3mob, l-height2);
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                line-height: 2rem;
+                font-size: 1.2rem
             }
         }
 
@@ -709,9 +935,15 @@
             @include box-modeling10(7%);
             @include box-modeling4(3%);
             color: map-get($color, color1);
+
             @media only screen and (max-width:450px) {
                 font-size: map-get($divpz3mob, f-size);
                 line-height: map-get($divpz3mob, l-height3);
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: 1rem;
+                line-height: 1.5rem;
             }
         }
 
@@ -724,12 +956,17 @@
             font-style: map-get($font-stl, ital);
             font-weight: map-get($f-weight, f-w4);
             @include box-modeling(3%);
+
             @media only screen and (max-width:450px) {
                 font-size: map-get($ulmob, f-size2);
             }
         }
-        img{
+
+        img {
             @media only screen and (max-width:450px) {
+                margin-left: 6%;
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
                 margin-left: 6%;
             }
         }
@@ -767,8 +1004,13 @@
         div {
             h1 {
                 @extend %h1;
+
                 @media only screen and (max-width:450px) {
                     font-size: map-get($h1mob, f-size);
+                }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -800,8 +1042,14 @@
                 font-size: map-get($f-size, talle5);
                 color: map-get($color, color2);
                 font-weight: map-get($f-weight, f-w1);
+
                 @media only screen and(max-width: 450px) {
                     font-size: map-get($h2mob, f-size2);
+                }
+
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
                 }
             }
 
@@ -813,16 +1061,27 @@
                     color: map-get($color, color2);
                     font-size: map-get($f-size, talle11);
                     font-weight: map-get($f-weight, f-w1);
+
                     @media only screen and(max-width: 450px) {
                         font-size: map-get($ulmob, f-size3);
                     }
-                    p{
+                    @media only screen and (min-width:451px) and (max-width:960px) {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
                         @media only screen and(max-width: 450px) {
                             font-size: map-get($pmob, f-size2);
-                            line-height:map-get($pmob, l-height2 ) ;
+                            line-height: map-get($pmob, l-height2);
+                        }
+
+                        @media only screen and (min-width:451px) and (max-width:960px) {
+                            font-size: 1rem;
+                            line-height: 1.5rem;
                         }
                     }
-                    iframe{
+
+                    iframe {
                         width: 80%;
                         height: auto;
                     }
@@ -846,6 +1105,14 @@
 
                         .pad {
                             @include box-modeling(0%);
+
+                            .larg {
+                                @media only screen and(max-width: 450px) {
+                                    width: 75%;
+                                    height: auto;
+                                }
+                            }
+
                         }
                     }
 
@@ -854,9 +1121,15 @@
                         color: map-get($color, color7);
                         font-style: map-get($font-stl, ital);
                         line-height: map-get($interlin, l-height10);
+
                         @media only screen and (max-width:450px) {
                             font-size: map-get($h3mob, f-size3);
                             line-height: map-get($h3mob, l-height2);
+                        }
+
+                        @media only screen and (min-width:451px) and (max-width:960px) {
+                            line-height: 2rem;
+                            font-size: 1.2rem
                         }
                     }
                 }
@@ -867,9 +1140,15 @@
                     font-size: map-get($f-size, talle11);
                     line-height: map-get($interlin, l-height9);
                     text-align: map-get($dplay, txt-alg);
+
                     @media only screen and(max-width: 450px) {
                         font-size: map-get($pmob, f-size2);
-                        line-height:map-get($pmob, l-height2 ) ;
+                        line-height: map-get($pmob, l-height2);
+                    }
+
+                    @media only screen and (min-width:451px) and (max-width:960px) {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
                     }
                 }
             }

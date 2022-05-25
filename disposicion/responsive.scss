@@ -16,6 +16,7 @@ $h3mob:(
     f-size: 1.2rem,
     f-size2: 1.5rem,
     f-size3: 1.3rem,
+    f-size4: 0.5rem,
 );
 $h4mob:(
     l-height: 2rem,
@@ -25,8 +26,10 @@ $h4mob:(
 $pmob: (
     f-size: 0.8rem,
     f-size2: 1rem,
+    f-size3: 0.3rem,
     l-height: 1.5rem,
     l-height2:2rem,
+    l-height3:1.6rem,
 );
 $divz3mob: (
     ancho1: 100%,
@@ -87,10 +90,7 @@ $z4capamob:(
     f-weight: 400,
     txt-alg: center,
 );
-$z5imgcurmob:(
-    dplay: flex,
-    f-dir: row,
-);
+
 $z2desmob:(
     ancho1:90%,
     alto1:auto,

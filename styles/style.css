@@ -16,6 +16,15 @@ body {
     overflow-x: hidden;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  body {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body .zona-1 {
   grid-area: zona-1;
   grid-column-start: 1;
@@ -318,6 +327,13 @@ body .zona-1 .encabezado div {
 
 /* @media queries */
 /* mobile pseudo */
+/* INICIA CONTACTO.HTML */
+.ficha div ul li iframe {
+  width: 80%;
+  height: auto;
+}
+
+/* FIN CONTACTO.HTML */
 .zona-2 .presentacion {
   background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
   background-position: center;
@@ -330,6 +346,11 @@ body .zona-1 .encabezado div {
 @media only screen and (max-width: 450px) {
   .zona-2 .presentacion div h1 {
     font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion div h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -349,6 +370,12 @@ body .zona-1 .encabezado div {
     line-height: 2rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 .zona-2-desarrollo p {
   color: #52734D;
   line-height: 2.8rem;
@@ -363,12 +390,24 @@ body .zona-1 .encabezado div {
     line-height: 1.5rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 .zona-3 {
   background-color: #DDFFBC;
 }
 .zona-3 .autumn {
   background-color: rgba(255, 192, 203, 0.797);
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn {
+    width: 100%;
+    height: 100%;
+  }
 }
 .zona-3 .autumn .temporada {
   background-image: url(https://cdn.pixabay.com/photo/2017/10/02/21/56/sheet-2810487_1280.jpg);
@@ -379,6 +418,12 @@ body .zona-1 .encabezado div {
   padding-bottom: 10%;
   width: 100%;
   height: 100%;
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn .temporada {
+    width: 100%;
+    height: auto;
+  }
 }
 .zona-3 .autumn .temporada div p {
   color: rgb(255, 255, 255);
@@ -395,6 +440,13 @@ body .zona-1 .encabezado div {
     font-size: 0.8rem;
     line-height: 1rem;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn .temporada div p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 5%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -423,6 +475,18 @@ body .zona-1 .encabezado div {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 div h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 div iframe {
+    width: 80%;
+    height: auto;
+  }
+}
 
 .zona-5 {
   background-color: #FEFFDE;
@@ -448,9 +512,17 @@ body .zona-1 .encabezado div {
     line-height: 3rem;
   }
 }
-.zona-5 .pasos div img {
-  width: 120px;
-  height: 120px;
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .pasos div p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .pasos div img {
+    width: 120px;
+    height: 120px;
+  }
 }
 .zona-5 .separador1 {
   width: 90%;
@@ -482,6 +554,11 @@ body .zona-1 .encabezado div {
     font-size: 1.4rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .servicios div h1 {
+    font-size: 1.8rem;
+  }
+}
 
 .zona-2-desarrollo h2 {
   color: #466142;
@@ -493,6 +570,12 @@ body .zona-1 .encabezado div {
 @media only screen and (max-width: 450px) {
   .zona-2-desarrollo h2 {
     font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.5rem;
     line-height: 2rem;
   }
 }
@@ -511,6 +594,12 @@ body .zona-1 .encabezado div {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
 .zona-2-desarrollo ul {
   color: #52734D;
   list-style: circle;
@@ -526,6 +615,16 @@ body .zona-1 .encabezado div {
     font-size: 0.8rem;
     line-height: 2;
     font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo ul {
+    list-style: circle;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 500;
+    padding: 10%;
   }
 }
 
@@ -550,6 +649,12 @@ body .zona-1 .encabezado div {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .capacitacion h4 {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+}
 .zona-3 .capacitacion ul {
   list-style: circle;
   font-size: 1.2rem;
@@ -566,6 +671,16 @@ body .zona-1 .encabezado div {
     font-size: 0.8rem;
     line-height: 2;
     font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .capacitacion ul {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 500;
+    margin: 0 5%;
+    padding: 0 5%;
   }
 }
 
@@ -588,6 +703,13 @@ body .zona-1 .encabezado div {
     text-align: center;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
 .zona-4 .capa h3 {
   font-size: 1.8rem;
   line-height: 1.8rem;
@@ -598,6 +720,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-4 .capa h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa h3 {
+    line-height: 2rem;
     font-size: 1.5rem;
   }
 }
@@ -614,14 +742,17 @@ body .zona-1 .encabezado div {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa h4 {
+    font-size: 1.2rem;
+  }
+}
 
 /* fin zona 4 */
 /* inicio zona 5 */
-@media only screen and (max-width: 450px) {
-  .zona-5 .imagenes-cursos {
-    display: flex;
-    flex-direction: row;
-  }
+.zona-5 .imagenes-cursos {
+  display: flex;
+  flex-direction: row;
 }
 .zona-5 .boton {
   width: 90%;
@@ -646,6 +777,12 @@ body .zona-1 .encabezado div {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .boton h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
 .zona-5 .boton a {
   background-color: #DDFFBC;
   text-decoration: none;
@@ -654,6 +791,11 @@ body .zona-1 .encabezado div {
   border: 2px solid #52734D;
   border-radius: 20px;
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .boton a {
+    font-size: 1rem;
+  }
 }
 .zona-5 .boton a:hover {
   background-color: rgba(26, 71, 19, 0.4235294118);
@@ -680,6 +822,17 @@ body .zona-1 .encabezado div {
   height: 20vh;
   padding: 2% 0% 50% 0%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2 .presentacion-productos div h1 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion-productos div h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /* fin zona-2 productos */
 /* Inicia  zona-2-desarrollo galeria de productos */
 .zona-2-desarrollo section .sub-titulo {
@@ -690,6 +843,17 @@ body .zona-1 .encabezado div {
   text-align: center;
   line-height: 2rem;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .sub-titulo h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .sub-titulo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 .zona-2-desarrollo section .talle {
   width: 70%;
   height: auto;
@@ -697,8 +861,30 @@ body .zona-1 .encabezado div {
 .zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
   color: whitesmoke;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
 .zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
   color: #DDFFBC;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* fin .zona-2-desarrollo galeria productos */
@@ -713,6 +899,19 @@ body .zona-1 .encabezado div {
   padding-top: 5%;
   margin: 2%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos {
+    width: 100%;
+    height: 100%;
+  }
+}
 .zona-3 .nuestros-productos h3 {
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -720,14 +919,63 @@ body .zona-1 .encabezado div {
   font-style: italic;
   color: #466142;
 }
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos h3 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos p {
+    padding: 0 10% 5% 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos .florcita {
+    display: none;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos .florcita {
+    width: 40%;
+    height: auto;
+  }
+}
 
 /* FIN ZONA-3 NUESTROS-productos */
 /* inicia zona-4 publi-imagenes */
 .zona-4 .publi-imagenes {
   padding: 5%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-4 .publi-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+}
 .zona-4 .publi-imagenes img {
   padding: 5% 1%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .publi-imagenes .img-publi {
+    display: none;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .publi-imagenes .img-publi {
+    display: none;
+  }
 }
 
 /* fin zona-4 publi-imagenes */
@@ -748,6 +996,17 @@ body .zona-1 .encabezado div {
   font-style: italic;
   color: rgb(255, 255, 255);
   padding: 1% 0 5% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .boton2 h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .boton2 h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
 }
 .zona-5 .boton2 a {
   background-color: #FEFFDE;
@@ -790,10 +1049,37 @@ body .zona-1 .encabezado div {
   padding: 0 2%;
   margin-left: 2%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2 .presentacion-nosotros div h1 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion-nosotros div h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /*------Fin presentacion------*/
 .zona-2-desarrollo .somos {
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
 }
 .zona-2-desarrollo .somos section {
   width: 50%;
@@ -805,11 +1091,30 @@ body .zona-1 .encabezado div {
   padding: 5% 0% 0% 5%;
   margin-right: 2%;
 }
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos section .rex {
+    padding: 2% 10% 2% 15%;
+    width: 80%;
+    height: auto;
+  }
+}
 .zona-2-desarrollo .somos .vivero {
   width: 50%;
   height: auto;
   text-align: center;
   padding: 5% 5% 7.5% 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero {
+    width: 90%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero {
+    width: 90%;
+    height: auto;
+  }
 }
 .zona-2-desarrollo .somos .vivero h3 {
   text-align: center;
@@ -818,17 +1123,52 @@ body .zona-1 .encabezado div {
   font-size: 1.5rem;
   font-style: italic;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
 .zona-2-desarrollo .somos .vivero p {
   text-align: center;
   font-weight: lighter;
   line-height: 2rem;
   font-size: 1rem;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 /*------Fin somos----*/
 /* -----------inicio zona-3------------- */
 .zona-3 .dino {
   margin-top: 15%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .dino {
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 img {
+    width: 100%;
+    height: auto;
+    padding-top: 30%;
+  }
 }
 
 /* -----------fin zona-3----------------- */
@@ -840,6 +1180,18 @@ body .zona-1 .encabezado div {
   background-color: #FEFFDE;
   padding: 5% 5% 7.5% 5%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto {
+    width: 90%;
+    height: 100%;
+  }
+}
 .zona-4 .impacto h3 {
   text-align: center;
   font-weight: bold;
@@ -847,6 +1199,18 @@ body .zona-1 .encabezado div {
   font-size: 1.5rem;
   font-style: italic;
   color: #52734D;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
 }
 .zona-4 .impacto p {
   text-align: center;
@@ -857,6 +1221,18 @@ body .zona-1 .encabezado div {
   padding-bottom: 3%;
   color: #52734D;
 }
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 .zona-4 .impacto ul {
   list-style: none;
   font-size: 1.1rem;
@@ -866,6 +1242,21 @@ body .zona-1 .encabezado div {
   font-style: italic;
   font-weight: 500;
   padding: 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto ul {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto img {
+    margin-left: 6%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto img {
+    margin-left: 6%;
+  }
 }
 
 /*-------Fin impacto-----*/
@@ -894,6 +1285,17 @@ body .zona-1 .encabezado div {
   background-size: cover;
   padding: 2% 0% 50% 0%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2 .contacto div h1 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .contacto div h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /*---fin presentacion contacto----*/
 /*-----Comienzo ficha-----*/
 .zona-2-desarrollo .ficha {
@@ -917,6 +1319,17 @@ body .zona-1 .encabezado div {
   color: #466142;
   font-weight: bold;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 .zona-2-desarrollo .ficha div ul li {
   list-style: none;
   text-align: center;
@@ -924,6 +1337,32 @@ body .zona-1 .encabezado div {
   color: #466142;
   font-size: 1.3rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div ul li {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div ul li {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div ul li p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div ul li p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.zona-2-desarrollo .ficha div ul li iframe {
+  width: 80%;
+  height: auto;
 }
 .zona-2-desarrollo .ficha div .form-ubicacion {
   width: 70%;
@@ -940,11 +1379,29 @@ body .zona-1 .encabezado div {
 .zona-2-desarrollo .ficha div .form-ubicacion .form .alin .pad {
   padding: 0%;
 }
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form .alin .pad .larg {
+    width: 75%;
+    height: auto;
+  }
+}
 .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
   text-align: center;
   color: green;
   font-style: italic;
   line-height: 3.2rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
 }
 .zona-2-desarrollo .ficha div .form-ubicacion p {
   font-style: italic;
@@ -952,6 +1409,18 @@ body .zona-1 .encabezado div {
   font-size: 1.3rem;
   line-height: 5rem;
   text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /*----fin ficha-----*/
@@ -1142,6 +1611,39 @@ body .zona-1 .encabezado div {
     height: 60%;
     margin: 0;
     padding-bottom: 8%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-6 .mini-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .zona-6 .mini-grid .redes h3 {
+    line-height: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a {
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a img {
+    width: 40%;
+    height: auto;
+  }
+  .zona-6 .mini-grid .mapa {
+    line-height: 2.6rem;
+  }
+  .zona-6 .mini-grid .mapa div h3 {
+    line-height: 2.6rem;
+    padding: 8% 0 8% 12%;
+  }
+  .zona-6 .mini-grid .mapa div iframe {
+    width: 80%;
+    height: 60%;
+    margin: 0;
   }
 }
 
