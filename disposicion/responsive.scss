@@ -105,3 +105,97 @@ $z2desmob:(
 }
 /* FIN CONTACTO.HTML */
 
+/* tablet pseudo */
+$h1tab: (
+    f-size: 1.8rem,
+);
+$h2tab: (
+    f-size:1.5rem,
+    l-height: 2rem,
+
+);
+$h3tab:(
+    l-height: 2rem,
+    l-height2:2.5rem,
+    f-size: 1.2rem,
+    f-size2: 1.5rem,
+    f-size3: 1.3rem,
+    f-size4: 0.5rem,
+);
+$h4tab:(
+    l-height: 2rem,
+    f-size: 1.2rem,
+    f-size2: 0rem,
+);
+$ptab: (
+    f-size: 1rem,
+    f-size2: 1.5rem,
+    f-size3: 0.9rem,
+    l-height: 1.5rem,
+    l-height2:3rem,
+    l-height3:1.6rem,
+    l-height4: 2,
+    f-weight: 400,
+    txt-alg: center,
+);
+
+$divpz3tab: (
+    f-size: 1rem,
+    l-height: 1.5rem,
+);
+$divz4tab:(
+    ancho1:90%,
+    alto1:100%,
+);
+
+$divpz5tab:(
+    f-size: 1.5rem,
+    l-height: 3rem,
+);
+
+$z6redesh3tab:(
+    l-height: 0.5rem,
+    f-size: 1.5rem,
+    pad-top: 5%,
+);
+$z6redesimg:(
+    pad-left: 10%,
+    pad-top:5%,
+);
+$z6maph3:(
+    l-height: 2.6rem,
+    pad: 8% 0 8% 12%,
+);
+$z6mapiframe:(
+    ancho: 80%,
+    alto: 60%,
+    marg: 0,
+    pad-bot: 8%,
+);
+$ultab:(
+    l-style: circle,
+    f-size: 1rem,
+    f-size2: 1.2rem,
+    l-height: 2,
+    l-height2: 1.8rem,
+    f-weight: 500,
+);
+$z4capatab:(
+    f-size: 1.2rem,
+    f-weight: 500,
+    txt-alg: center,
+);
+
+$z2destab:(
+    ancho1:90%,
+    alto1:auto,
+);
+
+ /* INICIA CONTACTO.HTML */
+
+
+.ficha div ul li iframe {
+    width: 80%;
+    height: auto;
+}
+/* FIN CONTACTO.HTML */

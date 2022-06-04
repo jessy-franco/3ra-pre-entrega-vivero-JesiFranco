@@ -334,6 +334,14 @@ body .zona-1 .encabezado div {
 }
 
 /* FIN CONTACTO.HTML */
+/* tablet pseudo */
+/* INICIA CONTACTO.HTML */
+.ficha div ul li iframe {
+  width: 80%;
+  height: auto;
+}
+
+/* FIN CONTACTO.HTML */
 .zona-2 .presentacion {
   background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
   background-position: center;
@@ -345,12 +353,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-2 .presentacion div h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2 .presentacion div h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -551,12 +559,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-2 .servicios div h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2 .servicios div h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -652,7 +660,7 @@ body .zona-1 .encabezado div {
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-3 .capacitacion h4 {
     font-size: 1.2rem;
-    line-height: 2;
+    line-height: 2rem;
   }
 }
 .zona-3 .capacitacion ul {
@@ -677,7 +685,7 @@ body .zona-1 .encabezado div {
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-3 .capacitacion ul {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.8rem;
     font-weight: 500;
     margin: 0 5%;
     padding: 0 5%;
@@ -824,12 +832,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-2 .presentacion-productos div h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2 .presentacion-productos div h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -1051,12 +1059,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-2 .presentacion-nosotros div h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2 .presentacion-nosotros div h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -1287,12 +1295,12 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (max-width: 450px) {
   .zona-2 .contacto div h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2 .contacto div h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -1399,8 +1407,8 @@ body .zona-1 .encabezado div {
 }
 @media only screen and (min-width: 451px) and (max-width: 960px) {
   .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
-    line-height: 2rem;
     font-size: 1.2rem;
+    line-height: 2rem;
   }
 }
 .zona-2-desarrollo .ficha div .form-ubicacion p {
@@ -1602,8 +1610,7 @@ body .zona-1 .encabezado div {
     padding-top: 5%;
   }
   .zona-6 .mini-grid .mapa div h3 {
-    text-align: center;
-    line-height: 1.6rem;
+    line-height: 2.6rem;
     padding: 8% 0 8% 12%;
   }
   .zona-6 .mini-grid .mapa div iframe {

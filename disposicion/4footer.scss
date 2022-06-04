@@ -130,15 +130,15 @@
 
             .redes {
                 h3 {
-                    line-height: 0.5rem;
-                    font-size: 1.5rem;
-                    padding-top: 5%;
+                    line-height: map-get($z6redesh3tab, l-height);
+                    font-size: map-get($z6redesh3tab, f-size);
+                    padding-top: map-get($z6redesh3tab, pad-top);
                 }
 
                 div {
                     a {
-                        padding-left: 10%;
-                        padding-top: 5%;
+                        padding-left: map-get($z6redesimg, pad-left);
+                        padding-top: map-get($z6redesimg, pad-top);
 
                         img {
                             width: 40%;
@@ -154,13 +154,14 @@
 
                 div {
                     h3 {
-                        line-height: 2.6rem;padding: map-get($z6maph3, pad);
+                        line-height:map-get($z6maph3, l-height);
+                        padding: map-get($z6maph3, pad);
                     }
 
                     iframe {
-                        width: 80%;
-                        height: 60%;
-                        margin: 0;
+                        width: map-get($z6mapiframe, ancho);
+                        height: map-get($z6mapiframe, alto);
+                        margin: map-get($z6mapiframe, marg);
                     }
                 }
             }
