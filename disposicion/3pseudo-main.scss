@@ -231,7 +231,6 @@
         @include box-modeling (2% 0% 50% 0%);
 
         div {
-            background-color: $colh1;
             @include box-modeling(0 2%);
             @include box-modeling9(2%);
 
@@ -760,7 +759,6 @@
         @include box-modeling(2% 0% 50% 0%);
 
         div {
-            background-color: $colh1;
             @include box-modeling(0 2%);
             @include box-modeling9(2%);
 

@@ -8,7 +8,7 @@
 body {
     .zona-1 {
         .encabezado {
-            div {
+            .logos {
                 background-color: $zona1-nav;
                 @extend %flex1;
                 @include box-modeling (1%);
@@ -44,23 +44,33 @@ body {
         }
 
         nav {
-            div {
-                .logotipo {
+            background-color: #DDFFBC;
+            div{
+                background-color: #DDFFBC;
+                width: map-get($tall-cont, ancho1);
+                height: map-get($tall-cont, alto3);
+                @media only screen and(max-width:450px) {
+                    width: map-get($tall-cont, ancho1);
+                    height: map-get($tall-cont, alto1)!important;
+                }
+                @media only screen and (min-width:451px) and (max-width:960px) {
+                    width: map-get($tall-cont, ancho1);
+                    height: map-get($tall-cont, alto1)!important;
+                }
+
+                .naveg {
                     visibility: hidden;
                 }
 
-                .background-nav {
-                    @extend %flex2;
-                    background-color: $zona1-nav;
-                    width: map-get($tall-cont, ancho1);
-                    height: map-get($tall-cont, alto2);
 
-                    ul {
-                        li {
-                            a {
-                                @media only screen and(max-width:450px) {
-                                    font-size: 0.5rem;
-                                }
+
+                ul {
+                    background-color: #DDFFBC;
+
+                    li {
+                        a {
+                            @media only screen and(max-width:450px) {
+                                font-size: 0.5rem;
                             }
                         }
                     }
