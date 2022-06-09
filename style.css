@@ -1,0 +1,1673 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400;1,500&display=swap");
+body {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  body {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .zona-1 {
+  grid-area: zona-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+}
+body .zona-2 {
+  grid-area: zona-2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  width: 100%;
+  height: auto;
+}
+body .zona-2-desarrollo {
+  grid-area: zona-2-desarrollo;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background: rgb(167, 189, 145);
+  background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+  width: 100%;
+  height: auto;
+  padding: 4% 1%;
+}
+body .zona-3 {
+  grid-area: zona-3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background-color: #DDFFBC;
+}
+body .zona-4 {
+  grid-area: zona-4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  width: 100%;
+  height: auto;
+  background: rgb(173, 175, 173);
+  background: linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+body .zona-5 {
+  grid-area: zona-5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  background-color: #FEFFDE;
+  width: 100%;
+  height: auto;
+}
+body .zona-6 {
+  grid-area: zona-6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 21;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 62, 5%;
+}
+
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* color zona5 y 6-redes */
+/* background color h1 */
+/* boton */
+/* estilos usando maps */
+/* estilos font */
+/* estilo de lista */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+/* estilo de fuentes */
+/* bordes */
+/* Extend aplica a:.encabezado div/ */
+body .zona-1 .encabezado .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .capacitacion, .zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-2-desarrollo .ficha div .form-ubicacion, .zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-2-desarrollo .ficha, .zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zona-2-desarrollo .somos section .rex, .zona-4 .publi-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .contacto, .zona-2 .presentacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .contacto div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
+/* como hacer para que me tome los gradiantes???!?!?! mientras tanto color "X"*/
+body .zona-1 .encabezado .logos {
+  background-color: rgba(221, 255, 188, 0.831372549);
+  padding: 1%;
+}
+body .zona-1 .encabezado .logos .dino-sucu {
+  padding: 1% 0%;
+  width: 120px;
+  height: 120px;
+}
+body .zona-1 .encabezado .logos .dino-sucu .animate__animated .animate__backInRight {
+  --animate-duration: 2s;
+}
+body .zona-1 .encabezado .logos .dino-sucu .animate__animated .animate__backInLeft {
+  --animate-duration: 2s;
+}
+@media only screen and (max-width: 450px) {
+  body .zona-1 .encabezado .logos .dino-sucu {
+    padding: 1% 0%;
+    width: 60px;
+    height: 60px;
+  }
+  body .zona-1 .encabezado .logos .log-img {
+    width: 100px;
+    height: 70px;
+  }
+}
+body .zona-1 nav {
+  background-color: #DDFFBC;
+}
+body .zona-1 nav div {
+  background-color: #DDFFBC;
+  width: 100%;
+  height: 20vh;
+}
+@media only screen and (max-width: 450px) {
+  body .zona-1 nav div {
+    width: 100%;
+    height: auto !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  body .zona-1 nav div {
+    width: 100%;
+    height: auto !important;
+  }
+}
+body .zona-1 nav div .naveg {
+  visibility: hidden;
+}
+body .zona-1 nav div ul {
+  background-color: #DDFFBC;
+}
+@media only screen and (max-width: 450px) {
+  body .zona-1 nav div ul li a {
+    font-size: 0.5rem;
+  }
+}
+
+/* color zona5 y 6-redes */
+/* background color h1 */
+/* boton */
+/* estilos usando maps */
+/* estilos font */
+/* estilo de lista */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+/* estilo de fuentes */
+/* bordes */
+/* Extend aplica a:.encabezado div/ */
+body .zona-1 .encabezado .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .capacitacion, .zona-3 .autumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-2-desarrollo .ficha div .form-ubicacion, .zona-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-2-desarrollo .ficha, .zona-5 .pasos div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zona-2-desarrollo .somos section .rex, .zona-4 .publi-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .contacto, .zona-2 .presentacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .contacto div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .presentacion-productos div h1, .zona-2 .servicios div h1, .zona-2 .presentacion div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
+/* @media queries */
+/* mobile pseudo */
+/* INICIA CONTACTO.HTML */
+.ficha div ul li iframe {
+  width: 80%;
+  height: auto;
+}
+
+/* FIN CONTACTO.HTML */
+/* tablet pseudo */
+/* INICIA CONTACTO.HTML */
+.ficha div ul li iframe {
+  width: 80%;
+  height: auto;
+}
+
+/* FIN CONTACTO.HTML */
+.zona-2 .presentacion {
+  background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0 50% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2 .presentacion div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion div h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+.zona-2-desarrollo {
+  background-color: rgb(167, 189, 145);
+}
+.zona-2-desarrollo h2 {
+  color: #466142;
+  line-height: 4.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1% 0 1% 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.zona-2-desarrollo p {
+  color: #52734D;
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 550;
+  padding: 0.5% 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.zona-3 {
+  background-color: #DDFFBC;
+}
+.zona-3 .autumn {
+  background-color: rgba(255, 192, 203, 0.797);
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn {
+    width: 100%;
+    height: 100%;
+  }
+}
+.zona-3 .autumn .temporada {
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/02/21/56/sheet-2810487_1280.jpg);
+  opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn .temporada {
+    width: 100%;
+    height: auto;
+  }
+}
+.zona-3 .autumn .temporada div p {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  margin: 4.5% 2% 4.5% 4%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .autumn .temporada div p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .autumn .temporada div p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .autumn .temporada div {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.zona-4 {
+  background-color: rgb(173, 175, 173), linear-gradient(0deg, rgb(173, 175, 173) 2%, rgb(173, 194, 169) 96%);
+}
+.zona-4 div {
+  padding: 0 2% 4% 2%;
+  margin: 4% 8% 6% 6%;
+}
+.zona-4 div h3 {
+  line-height: 3rem;
+  font-size: 1.2rem;
+  color: rgb(80, 78, 78);
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 div h3 {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 div h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 div iframe {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.zona-5 {
+  background-color: #FEFFDE;
+}
+.zona-5 .pasos div {
+  width: 100%;
+  height: auto;
+  margin-right: 15%;
+}
+.zona-5 .pasos div p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #52734D;
+  display: inline-block;
+  text-align: center;
+  padding: 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .pasos div p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .pasos div p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .pasos div img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.zona-5 .separador1 {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?cs=srgb&dl=pexels-cole-keister-3144214.jpg&fm=jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+/* Inicia servicios html */
+/* Inicia servicios portada */
+.zona-2 .servicios {
+  background-image: url(https://images.pexels.com/photos/68470/pexels-photo-68470.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0% 50% 0%;
+}
+.zona-2 .servicios div {
+  padding: 0 2%;
+  margin-left: 2%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2 .servicios div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .servicios div h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+.zona-2-desarrollo h2 {
+  color: #466142;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5% 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.zona-2-desarrollo h3 {
+  color: #466142;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5% 3%;
+  font-style: oblique;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo h3 {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-2-desarrollo ul {
+  color: #52734D;
+  list-style: circle;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  font-style: italic;
+  font-weight: 550;
+  padding: 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo ul {
+    list-style: circle;
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo ul {
+    list-style: circle;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 500;
+    padding: 10%;
+  }
+}
+
+/* fin servicios portada */
+/* ----------inicia capacitacion-------- */
+/* -----inicio zona-3------ */
+.zona-3 .capacitacion {
+  width: 100%;
+  height: 100%;
+}
+.zona-3 .capacitacion h4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+  padding: 6% 0 4% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .capacitacion h4 {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .capacitacion h4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+.zona-3 .capacitacion ul {
+  list-style: circle;
+  font-size: 1.2rem;
+  color: #52734D;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding: 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .capacitacion ul {
+    list-style: circle;
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .capacitacion ul {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin: 0 5%;
+    padding: 0 5%;
+  }
+}
+
+/* -------fin zona 3-------- */
+/* -------inicia zona-4----- */
+.zona-4 .capa {
+  font-size: 1.2rem;
+  color: #466142;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 8%;
+  padding-top: 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .capa {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+.zona-4 .capa h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+  padding: 1% 3% 2% 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .capa h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa h3 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+.zona-4 .capa h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: italic;
+  color: #466142;
+  padding: 8% 0 20% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .capa h4 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .capa h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* fin zona 4 */
+/* inicio zona 5 */
+.zona-5 .imagenes-cursos {
+  display: flex;
+  flex-direction: row;
+}
+.zona-5 .boton {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: bottom;
+  background-size: cover;
+  padding: 5%;
+  text-align: center;
+}
+.zona-5 .boton h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding: 1% 0 5% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .boton h3 {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .boton h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-5 .boton a {
+  background-color: #DDFFBC;
+  text-decoration: none;
+  color: #52734D;
+  padding: 2%;
+  border: 2px solid #52734D;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .boton a {
+    font-size: 1rem;
+  }
+}
+.zona-5 .boton a:hover {
+  background-color: rgba(26, 71, 19, 0.4235294118);
+  color: #DDFFBC;
+  padding: 4%;
+  border: 4px solid #DDFFBC;
+  border-radius: 20px;
+  transition: all 2s;
+  width: 15%;
+  height: auto;
+  font-size: 1.8rem;
+}
+
+/*-------fin zona-4------ */
+/*  --------fin capacitacion-------*/
+/*-----------INICIA PRODUCTOS.HTML------- */
+/* ------inicia zona-2 productos---- */
+.zona-2 .presentacion-productos {
+  background-image: url(https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?cs=srgb&dl=pexels-cottonbro-4503823.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  padding: 2% 0% 50% 0%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2 .presentacion-productos div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion-productos div h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* fin zona-2 productos */
+/* Inicia  zona-2-desarrollo galeria de productos */
+.zona-2-desarrollo section .sub-titulo {
+  padding: 5%;
+}
+.zona-2-desarrollo section .sub-titulo h2 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .sub-titulo h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .sub-titulo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.zona-2-desarrollo section .talle {
+  width: 70%;
+  height: auto;
+}
+.zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+  color: whitesmoke;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+  color: #DDFFBC;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo section .talle .car-in .car-item .tip-color p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* fin .zona-2-desarrollo galeria productos */
+/* inicia zona-3 nuestros productos */
+.zona-3 .nuestros-productos {
+  font-size: 1.2rem;
+  color: #466142;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding-top: 5%;
+  margin: 2%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos {
+    width: 100%;
+    height: 100%;
+  }
+}
+.zona-3 .nuestros-productos h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #466142;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos h3 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos p {
+    padding: 0 10% 5% 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .nuestros-productos .florcita {
+    display: none;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 .nuestros-productos .florcita {
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* FIN ZONA-3 NUESTROS-productos */
+/* inicia zona-4 publi-imagenes */
+.zona-4 .publi-imagenes {
+  padding: 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .publi-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+}
+.zona-4 .publi-imagenes img {
+  padding: 5% 1%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .publi-imagenes .img-publi {
+    display: none;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .publi-imagenes .img-publi {
+    display: none;
+  }
+}
+
+/* fin zona-4 publi-imagenes */
+/* Inicia zona-5 boton de descarga/separador */
+.zona-5 .boton2 {
+  background-image: url(https://images.pexels.com/photos/2968327/pexels-photo-2968327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+}
+.zona-5 .boton2 h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding: 1% 0 5% 0;
+}
+@media only screen and (max-width: 450px) {
+  .zona-5 .boton2 h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-5 .boton2 h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-5 .boton2 a {
+  background-color: #FEFFDE;
+  text-decoration: none;
+  color: green;
+  padding: 2%;
+  border: 2px solid #52734D;
+  border-radius: 20px;
+}
+.zona-5 .boton2 a:hover {
+  background-color: rgba(26, 71, 19, 0.4235294118);
+  color: #DDFFBC;
+  padding: 4%;
+  border: 4px solid #DDFFBC;
+  border-radius: 20px;
+  transition: all 2s;
+  width: 15%;
+  height: auto;
+  font-size: 1.8rem;
+}
+
+/* fin zona-5 boton de descarga/separador */
+/*----Fin publicidad productos------*/
+/* ------FIN PRODUCTOS.HTML----- */
+/*-------INICIO NOSOTROS HTML------*/
+/*------Comienza pseudo-main-----*/
+/*----comienza presentacion----*/
+/* inicia zona-2 nosotros */
+.zona-2 .presentacion-nosotros {
+  width: 100%;
+  height: auto;
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/22/08/07/singapore-zoo-2164309_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2% 0% 50% 0%;
+}
+.zona-2 .presentacion-nosotros div {
+  padding: 0 2%;
+  margin-left: 2%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2 .presentacion-nosotros div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .presentacion-nosotros div h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*------Fin presentacion------*/
+.zona-2-desarrollo .somos {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+}
+.zona-2-desarrollo .somos section {
+  width: 50%;
+  height: auto;
+}
+.zona-2-desarrollo .somos section .rex {
+  width: 100%;
+  height: auto;
+  padding: 5% 0% 0% 5%;
+  margin-right: 2%;
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos section .rex {
+    padding: 2% 10% 2% 15%;
+    width: 80%;
+    height: auto;
+  }
+}
+.zona-2-desarrollo .somos .vivero {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding: 5% 5% 7.5% 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero {
+    width: 90%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero {
+    width: 90%;
+    height: auto;
+  }
+}
+.zona-2-desarrollo .somos .vivero h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-2-desarrollo .somos .vivero p {
+  text-align: center;
+  font-weight: lighter;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .somos .vivero p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .somos .vivero p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*------Fin somos----*/
+/* -----------inicio zona-3------------- */
+.zona-3 .dino {
+  margin-top: 15%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-3 .dino {
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-3 img {
+    width: 100%;
+    height: auto;
+    padding-top: 30%;
+  }
+}
+
+/* -----------fin zona-3----------------- */
+/* -----------inicio zona-4------------- */
+/*----comienzo impacto-----*/
+.zona-4 .impacto {
+  width: 100%;
+  height: 100%;
+  background-color: #FEFFDE;
+  padding: 5% 5% 7.5% 5%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto {
+    width: 90%;
+    height: 100%;
+  }
+}
+.zona-4 .impacto h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #52734D;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto h3 {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.zona-4 .impacto p {
+  text-align: center;
+  font-weight: lighter;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding-right: 7%;
+  padding-bottom: 3%;
+  color: #52734D;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.zona-4 .impacto ul {
+  list-style: none;
+  font-size: 1.1rem;
+  color: #52734D;
+  line-height: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding: 3%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto ul {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-4 .impacto img {
+    margin-left: 6%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-4 .impacto img {
+    margin-left: 6%;
+  }
+}
+
+/*-------Fin impacto-----*/
+/* -----------fin zona-4------------- */
+/* -----------inicia zona-5--------- */
+/*-------comienzo separador-----*/
+.separador2 {
+  width: 90%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/88502/tulips-holland-tulip-fields-royalty-free-88502.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+/*-----Fin separador-----*/
+/*-------fin NOSOTROS HTML------*/
+/*-------INICIO CONTACTO HTML------*/
+/*---comienza presentacion contacto----*/
+.zona-2 .contacto {
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/2896280/pexels-photo-2896280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2% 0% 50% 0%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2 .contacto div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2 .contacto div h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*---fin presentacion contacto----*/
+/*-----Comienzo ficha-----*/
+.zona-2-desarrollo .ficha {
+  background-image: url(https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.zona-2-desarrollo .ficha div {
+  background-color: rgba(254, 255, 222, 0.498);
+  padding: 5% 5% 8% 5%;
+}
+.zona-2-desarrollo .ficha div h2 {
+  text-align: center;
+  font-style: italic;
+  line-height: 3rem;
+  color: #172415;
+  font-size: 2rem;
+  color: #466142;
+  font-weight: bold;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.zona-2-desarrollo .ficha div ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #466142;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div ul li {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div ul li {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div ul li p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div ul li p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.zona-2-desarrollo .ficha div ul li iframe {
+  width: 80%;
+  height: auto;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion {
+  width: 70%;
+  height: auto;
+  margin: 10%;
+  background-color: rgba(255, 192, 203, 0.797);
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form {
+  background-color: #FEFFDE;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  padding: 0%;
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin .pad {
+  padding: 0%;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form .alin .pad .larg {
+    width: 75%;
+    height: auto;
+  }
+}
+.zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+  text-align: center;
+  color: green;
+  font-style: italic;
+  line-height: 3.2rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion .form h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+.zona-2-desarrollo .ficha div .form-ubicacion p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-2-desarrollo .ficha div .form-ubicacion p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*----fin ficha-----*/
+/*-------Comienzo separador----*/
+.separador3 {
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/8892905/pexels-photo-8892905.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0;
+}
+
+/*------fin separador-----*/
+/*------FIN CONTACTO HTML-----*/
+/* color zona5 y 6-redes */
+/* background color h1 */
+/* boton */
+/* Extend aplica a:.encabezado div/ */
+body .zona-1 .encabezado .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.zona-6 .mini-grid .redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a .autumn */
+.zona-3 .autumn, .zona-3 .capacitacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* aplica a: .zona-4 div/ */
+.zona-6 .mini-grid .mapa div, .zona-4 div, .zona-2-desarrollo .ficha div .form-ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aplica a: .pasos/ */
+.zona-5 .pasos div, .zona-2-desarrollo .ficha {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zona-4 .publi-imagenes, .zona-2-desarrollo .somos section .rex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2 .presentacion-nosotros, .zona-2 .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.zona-2-desarrollo .somos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.zona-2-desarrollo .ficha div .form-ubicacion .form .alin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.zona-2 .presentacion div h1, .zona-2 .servicios div h1, .zona-2 .presentacion-productos div h1, .zona-2 .presentacion-nosotros div h1, .zona-2 .contacto div h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  line-height: 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
+/* estilos usando maps */
+/* estilos font */
+/* estilo de lista */
+/* colores de fuente */
+/* tamaños de divs */
+/* background-image */
+/* estilo de fuentes */
+/* bordes */
+.zona-6 .mini-grid {
+  display: grid;
+  grid-template-columns: 650px 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "redes mapa";
+  overflow-x: hidden;
+}
+.zona-6 .mini-grid .redes {
+  grid-area: redes;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto;
+  background-color: #FEFFDE;
+}
+.zona-6 .mini-grid .redes h3 {
+  color: #52734D;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 2rem;
+  padding: 8% 5%;
+}
+.zona-6 .mini-grid .redes div a {
+  padding: 10%;
+  align-items: center;
+}
+.zona-6 .mini-grid .mapa {
+  grid-area: mapa;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 5% 10%;
+  background-color: rgba(173, 194, 169, 0.7568627451);
+  width: 100%;
+  height: auto;
+}
+.zona-6 .mini-grid .mapa div {
+  width: 100%;
+  height: auto;
+}
+.zona-6 .mini-grid .mapa div h3 {
+  text-align: center;
+  color: green;
+  font-style: italic;
+  margin-right: 15%;
+  padding-bottom: 6%;
+  line-height: 2.5rem;
+}
+.zona-6 .mini-grid .mapa div iframe {
+  width: 80%;
+  height: 60%;
+  margin-right: 15%;
+}
+.zona-6 .pie {
+  background-color: #99A799;
+  line-height: 1.6rem;
+}
+@media only screen and (max-width: 450px) {
+  .zona-6 .mini-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .zona-6 .mini-grid .redes h3 {
+    line-height: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a {
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .mapa div h3 {
+    line-height: 2.6rem;
+    padding: 8% 0 8% 12%;
+  }
+  .zona-6 .mini-grid .mapa div iframe {
+    width: 80%;
+    height: 60%;
+    margin: 0;
+    padding-bottom: 8%;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .zona-6 .mini-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .zona-6 .mini-grid .redes h3 {
+    line-height: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a {
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .zona-6 .mini-grid .redes div a img {
+    width: 40%;
+    height: auto;
+  }
+  .zona-6 .mini-grid .mapa {
+    line-height: 2.6rem;
+  }
+  .zona-6 .mini-grid .mapa div h3 {
+    line-height: 2.6rem;
+    padding: 8% 0 8% 12%;
+  }
+  .zona-6 .mini-grid .mapa div iframe {
+    width: 80%;
+    height: 60%;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
