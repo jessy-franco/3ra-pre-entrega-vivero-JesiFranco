@@ -800,6 +800,14 @@
         section {
             width: map-get($tall-cont, ancho6);
             height: map-get($tall-cont, alto1);
+            @media only screen and (max-width:450px) {
+                width: 0;
+                height: 0;
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 0;
+                height: 0;
+            }
 
             .rex {
                 width: map-get($tall-cont, ancho1);
@@ -807,10 +815,11 @@
                 @include box-modeling(5% 0% 0% 5%);
                 @include box-modeling5(2%);
                 @extend %flex6;
+                @media only screen and (max-width:450px) {
+                    display: none !important;
+                }
                 @media only screen and (min-width:451px) and (max-width:960px) {
-                    padding: 2% 10% 2% 15% ;
-                    width: 80%;
-                    height: auto;
+                    display: none !important;
                 }
             }
         }
@@ -875,13 +884,12 @@
 
         @media only screen and(max-width: 450px) {
             padding-left: 10%;
+            margin-top: 0;
         }
-    }
-    img{
         @media only screen and (min-width:451px) and (max-width:960px) {
             width: 100%;
             height: auto;
-            padding-top: 30%;
+            margin-top: 0;
         }
     }
 }

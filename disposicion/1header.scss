@@ -40,37 +40,48 @@ body {
                         height: 70px;
                     }
                 }
+
+                @media only screen and (min-width: 451px) and (max-width: 960px) {
+                    .dino-sucu {
+                        padding: 1% 0%;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
             }
-        }
 
-        nav {
-            background-color: #DDFFBC;
-            div{
+            nav {
                 background-color: #DDFFBC;
-                width: map-get($tall-cont, ancho1);
-                height: map-get($tall-cont, alto3);
-                @media only screen and(max-width:450px) {
-                    width: map-get($tall-cont, ancho1);
-                    height: map-get($tall-cont, alto1)!important;
-                }
-                @media only screen and (min-width:451px) and (max-width:960px) {
-                    width: map-get($tall-cont, ancho1);
-                    height: map-get($tall-cont, alto1)!important;
-                }
 
-                .naveg {
-                    visibility: hidden;
-                }
-
-
-
-                ul {
+                div {
                     background-color: #DDFFBC;
+                    width: map-get($tall-cont, ancho1);
+                    height: map-get($tall-cont, alto3);
 
-                    li {
-                        a {
-                            @media only screen and(max-width:450px) {
-                                font-size: 0.5rem;
+                    @media only screen and(max-width:450px) {
+                        width: map-get($tall-cont, ancho1);
+                        height: map-get($tall-cont, alto1) !important;
+                    }
+
+                    @media only screen and (min-width:451px) and (max-width:960px) {
+                        width: map-get($tall-cont, ancho1);
+                        height: map-get($tall-cont, alto1) !important;
+                    }
+
+                    .naveg {
+                        visibility: hidden;
+                    }
+
+
+
+                    ul {
+                        background-color: #DDFFBC;
+
+                        li {
+                            a {
+                                @media only screen and(max-width:450px) {
+                                    font-size: 0.5rem;
+                                }
                             }
                         }
                     }
